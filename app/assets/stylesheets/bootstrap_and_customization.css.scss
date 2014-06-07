@@ -1,0 +1,41 @@
+$btn-success-bg: #8CC152;
+
+
+@import 'bootstrap';
+
+
+
+
+.navbar-inverse {
+border-top: #8CC152 5px solid;
+border-bottom: #dddddd 1px solid;
+border-bottom-opacity: 0.25;
+background-color: white;
+font-size: 16px;
+height: 60px;}
+
+.navbar-brand {
+position: absolute;
+display: block;
+top: 0;
+left: 50%;
+height: 100%;
+margin-left: -129px !important;
+color: #333 !important;
+font-size: 30px;
+text-shadow: #E6E9ED 1px 1px;
+font-weight: 500;}
+
+.navbar {
+position: relative;
+min-height: 50px;
+margin-bottom: 0px;
+/* border: 1px solid transparent; */}
+
+.wrapperimg{background: url('theo.png');
+	background-size:contain;
+background-repeat:no-repeat;
+}
+
+.btn-success:hover{color:#ffffff;background-color: #a0d468;
+border-color: #a0d468;}
