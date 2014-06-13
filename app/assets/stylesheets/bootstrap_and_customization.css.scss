@@ -27,15 +27,15 @@ text-shadow: #E6E9ED 1px 1px;
 font-weight: 500;}
 
 .navbar {
-position: relative;
+position: fixed;
 min-height: 50px;
 margin-bottom: 0px;
 /* border: 1px solid transparent; */}
 
-.wrapperimg{background: url('theo.png');
-	background-size:contain;
-background-repeat:no-repeat;
-}
+body{background: url('theo2.png')no-repeat ;
+background-size: cover;
+background-attachment: fixed;}
 
 .btn-success:hover{color:#ffffff;background-color: #a0d468;
 border-color: #a0d468;}
+
