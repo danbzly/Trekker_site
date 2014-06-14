@@ -47,3 +47,27 @@ border: 1px solid transparent;
 border-radius: 4px;}
 
 .txt-lg{font-size: 30px;}
+
+.navbar-toggle {
+position: relative;
+float: right;
+margin-right: 15px;
+padding: 9px 10px;
+margin-top: 8px;
+margin-bottom: 8px;
+background-color: #8CC152;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;}
+
+.navbar-collapse {
+overflow-x: visible;
+padding-right: 15px;
+padding-left: 15px;
+/* border-top: 1px solid transparent; */
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+-webkit-overflow-scrolling: touch;
+background: #fff;}
+
+
+
