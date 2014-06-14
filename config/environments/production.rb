@@ -80,4 +80,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  # Required for heroku
+  #Set to real domain name
+  config.action_mailer.default_url_options = { host: 'trekker.herokuapp.com' }
 end

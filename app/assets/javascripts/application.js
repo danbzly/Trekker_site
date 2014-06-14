@@ -16,3 +16,10 @@
 //= require turbolinks
 //= require_tree .
 
+
+/* For flash messing */
+$(function() {
+  setTimeout(function(){
+    $('.alert').slideUp(500);
+  }, 1000);
+});
