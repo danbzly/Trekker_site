@@ -1,23 +1,22 @@
-<p id="notice"><%= notice %></p>
-<p>
-<%= image_tag @blog.image.url(:medium) %>
-</p>
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @blog.category %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @blog.body_text %>
-</p>
-<% if @blog.user == current_user %>
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-
-<% end %>
+<div class="container">
 <%= link_to 'Back', blogs_path %>
+</div>
+
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading center">
+        <%= image_tag @blog.image.url(:large), class: "imgwd" %>
+      </div>
+      <div class="panel-body">
+      <p><%= @blog.title %></p>
+        <%= @blog.category %>
+        <%= @blog.body_text %>
+        <% if @blog.user == current_user %><br>
+		<%= link_to 'Edit', edit_blog_path(@blog) %>
+		<% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
