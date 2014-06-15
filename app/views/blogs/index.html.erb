@@ -1,5 +1,19 @@
+
+
+<div class="wrapperimg" style="height: 1000px; ">
 <div class="container">
-<div id="blogs" class="transitions-enabled">
+
+<button id="#blog" class="btn btn-success"><a href="#blog">TREK YOURSELF</a></button>
+
+</div> </div><a name="blog"></a>
+<div class="container" style="padding-top: 50px;" >
+<h1 style="opacity: .99 !important;">Trekker.co</h1>
+<p >Trek yourself before you rek yourself!</p>
+<button class="btn btn-success">TREK YOURSELF</a></button>
+
+<div style="background-color: white; opacity: .8;background-attachment: scroll; position: relative;"> 
+
+<div id="blogs" class="transitions-enabled" style="width: 100% !important;">
 <% @blogs.each do |blog| %>
 <div class="box panel panel-default">
       <%= image_tag blog.image.url(:medium) %>
@@ -14,5 +28,7 @@
     </div>
   </div>
   <% end %>
+</div></div>
 </div>
 </div>
+
