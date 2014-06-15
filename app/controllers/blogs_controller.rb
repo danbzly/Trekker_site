@@ -35,7 +35,7 @@ class BlogsController < ApplicationController
   def update
       if @blog.update(blog_params)
         redirect_to @blog, notice: 'Blog was successfully updated.'
-        render :show, status: :ok, location: @blog 
+#         render :show, status: :ok, location: @blog 
       else
         render action: 'edit'
       end

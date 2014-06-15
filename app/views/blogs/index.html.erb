@@ -1,29 +1,28 @@
 
 
-<div class="wrapperimg" style="height: 1000px; ">
+<div class="wrapperimg" style="height: 603px; ">
 <div class="container">
 
-<button id="#blog" class="btn btn-success"><a href="#blog">TREK YOURSELF</a></button>
+<!-- <button id="#blog" class="btn btn-success"><a href="#blog">TREK YOURSELF</a></button> -->
 
 </div> </div><a name="blog"></a>
-<div class="container" style="padding-top: 50px;" >
-<h1 style="opacity: .99 !important;">Trekker.co</h1>
-<p >Trek yourself before you rek yourself!</p>
-<button class="btn btn-success">TREK YOURSELF</a></button>
-
+<div class="container" style="padding-top: 10px;" >
+<h1 style="opacity: .99 !important;">SO YOU WANT TO TRAVEL?</h1>
 <div style="background-color: white; opacity: .8;background-attachment: scroll; position: relative;"> 
 
 <div id="blogs" class="transitions-enabled" style="width: 100% !important;">
 <% @blogs.each do |blog| %>
 <div class="box panel panel-default">
-      <%= image_tag blog.image.url(:medium) %>
+      <%= link_to image_tag(blog.image.url(:medium)), blog %>
       <div class="panel-body">
-      <%= blog.title %>
-      <%= blog.description %>
-      <%= link_to 'Show', blog %>
+      <h3><%= blog.title %></h3><br>
+      <h5 class="loco">Location: <%= blog.category %></h5><br>
+      <p class="parach"><%= blog.description %></p><br>
+      <div class="fl-rt">
+      <%= link_to 'Read More', blog, class: "btn btn-success" %></div><br>
       <% if blog.user == current_user %>
-        <%= link_to 'Edit', edit_blog_path(blog) %>
-        <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <div class="fl-rt2"><%= link_to 'Edit', edit_blog_path(blog) %> |
+        <%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></div>
       <% end %>
     </div>
   </div>

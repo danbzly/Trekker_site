@@ -33,12 +33,19 @@ margin-bottom: 0px;
 /* border: 1px solid transparent; */}
 
 html{margin-top: 60px;}
+body{color:black;}
+h3, h5 {margin: 0;}
+h1 {text-align:center}
+.fl-rt {float: right; position: relative}
+.fl-rt2{clear: both;float: right;margin-right: 8px;}
+.loco {color:#656D78; font-weight: 800; position: relative; top: -12px;}
+.parach {margin: 0 0 -29px;position: relative;top: -15px;}
 
 .btn-success:hover{color:#ffffff;background-color: #a0d468;
 border-color: #a0d468;}
 
-.wrapperimg {background: asset-url('theo2.png')no-repeat ;
-background-size: cover;
+.wrapperimg {background: asset-url('theo.png')no-repeat ;
+background-size: contain;
 background-attachment: fixed;}
 
 .alert {padding: 15px;
