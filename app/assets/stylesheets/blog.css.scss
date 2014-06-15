@@ -19,3 +19,16 @@
 }
 
 .box img:hover {color: #8CC152; opacity: .8;}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+.box {
+  margin: 5px;
+  width: 255px;
+ 
+}
+
+}
