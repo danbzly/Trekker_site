@@ -14,7 +14,7 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @blog.description %>
+  <%= @blog.body_text %>
 </p>
 <% if @blog.user == current_user %>
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
