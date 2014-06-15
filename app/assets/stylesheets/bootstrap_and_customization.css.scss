@@ -44,10 +44,13 @@ h1 {text-align:center}
 .btn-success:hover{color:#ffffff;background-color: #a0d468;
 border-color: #a0d468;}
 
-.wrapperimg {background: asset-url('theo.png')no-repeat ;
-background-size: contain;
-background-attachment: fixed;}
-
+.wrapperimg {background: asset-url('theo3.png')no-repeat fixed;
+ -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  }
+  
 .alert {padding: 15px;
 margin-bottom: 0px !important;
 border: 1px solid transparent;
