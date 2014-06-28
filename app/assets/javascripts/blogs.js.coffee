@@ -9,3 +9,6 @@ $ ->
       itemSelector: '.box'
       isFitWidth: true
       isOriginTop: false
+      
+      
+      
