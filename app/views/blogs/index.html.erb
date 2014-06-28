@@ -28,7 +28,11 @@
     </div>
   </div>
   <% end %>
-</div></div>
+</div>
+<div class="center">
+   <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>
+</div>
 </div>
 </div>
 

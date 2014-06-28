@@ -4,7 +4,7 @@ class BlogsController < ApplicationController
   before_action :correct_user, only: [:edit, :update, :destroy]
   # GET /blogs
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
   end
 
   # GET /blogs/1
