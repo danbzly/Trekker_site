@@ -2,12 +2,15 @@
   <div class="panel-heading">
     <div class="panel-title">
     <div class="container">
+    <div class="col-md-offset-1 col-md-9">
       <h1>Edit <%= resource_name.to_s.humanize %></h1>
+    </div>
     </div>
     </div>
   </div>
   <div class="panel-body">
   <div class="container">
+  <div class="col-md-offset-1 col-md-9">
     <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
       <%= devise_error_messages! %>
 
@@ -45,4 +48,5 @@
   </div>
   </div>
 -->
+</div>
 </div>
