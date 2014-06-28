@@ -1,16 +1,14 @@
 
-<div class="container" style="height:30px; position: relative; top:3px;">
-
-  
-  <%= link_to 'Back', blogs_path, class: "label label-success" %>
-
-
+<div class="container bckbtn">
+	<div class="col-md-offset-1 col-md-9">
+	  <%= link_to 'Back', blogs_path, class: "label label-success" %>
+	</div>
 </div>
-<div class="row">
-  <div class="col-md-offset-2 col-md-8">
+<div class="container">
+  <div class="col-md-offset-1 col-md-9">
     <div class="panel panel-default">
       <div class="panel-heading center">
-        <%= image_tag @blog.image.url(:medium), class: "imgwd" %>
+        <%= image_tag @blog.image.url(:large), class: "imgwd" %>
       </div>
       <div class="panel-body">
       <h2><%= @blog.title %></h2>
@@ -21,6 +19,17 @@
 		<% end %>
 
       </div>
+     
     </div>
   </div>
+<!--   If we ever want to add a side bar delete offset above and add in code below -->
+   <!--
+<div class="col-md-3">
+       <div class="panel panel-default">
+	       <div class="panel-heading center">
+			   	he
+	       </div>
+       </div>
+    </div>
+-->
 </div>
