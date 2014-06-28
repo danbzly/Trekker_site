@@ -17,7 +17,7 @@
       <div class="container panel-body">
       <h2><%= @blog.title %></h2>
       <h5>Location: <%= @blog.category %></h5>
-        <p style="padding:10px 0px; font-size: 18px;"><%= @blog.body_text %></p>
+        <p style="padding:10px 0px; font-size: 18px;"><%=raw @blog.body_text %></p>
         <% if @blog.user == current_user %><br>
 		<%= link_to 'Edit', edit_blog_path(@blog) %>
 		<% end %>

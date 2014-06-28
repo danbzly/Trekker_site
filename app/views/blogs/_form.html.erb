@@ -1,3 +1,5 @@
+<div class="panel panel-default">
+      <div class="panel-heading center">
 <%= form_for(@blog) do |f| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
@@ -10,27 +12,30 @@
       </ul>
     </div>
   <% end %>
- <div class="field">
+ <div class="form-group">
     <%= f.label :image %><br>
     <%= f.file_field :image, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :category %><br>
-    <%= f.text_field :category %>
+    <%= f.text_field :category, class: "form-control" %>
   </div>
-  <div class="field">
+ <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_area :description, class: "form-control des" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :body_text %><br>
-    <%= f.text_field :body_text %>
+    <%= f.text_area :body_text, :row => 60, class: "form-control bdy" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+            <%= f.submit "BLOG IT", class: "btn btn-success btn-lg btn-block txt-lg" %>
+
   </div>
 <% end %>
+</div>
+</div>
