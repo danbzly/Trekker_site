@@ -26,8 +26,8 @@
             
 <!--   If we ever want to add a side bar delete both col-md-2 above, make col-md-8 col-md-9 and add in code below -->			   
 		 <div class="col-md-3">
-				  <div class="panel panel-default">
-					  <div class="panel-heading center">
+				  
+					  
 					    <div class="panel panel-success">
 	                       <div class="panel-heading"><h5>Trekker.co on Instagram</h5></div>
 	                         <div class="panel-body">
@@ -46,8 +46,8 @@
 									<a href="http://instagram.com/trekkerdotco?ref=badge" class="ig-b- ig-b-24" target="_blank"><img src="//badges.instagram.com/static/images/ig-badge-24.png" alt="Instagram" /></a></h4></div>
 					       </div>
 						</div>
-					  </div>
-				  </div>
+					  
+				  
 			   </div>
 		</div>
 		
@@ -62,7 +62,7 @@
         sortBy: 'most-recent',
         limit: '6',
         resolution: 'thumbnail',
-        template: '<a href="{{link}}" target="_blank" alt="{{location}}" ><img src="{{image}}"  title="{{location}}" /><div class="likes">&hearts; {{likes}}</div></a>'
+        template: '<a href="{{link}}" target="_blank" alt="{{location}}" ><img src="{{image}}"  title="{{location}}" /><div class="likes"><span class="hearts">&hearts;</span> {{likes}}</div></a>'
     });
     userFeed.run();
 

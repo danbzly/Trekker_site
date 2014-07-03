@@ -42,15 +42,15 @@ overflow: hidden !important;
 
 /* instagram */
 .insta {position: relative;}
-.insta img{width: 57px; height: auto;border-radius: 5px; margin: 2px 2px; border: 1px solid #a0d468;}
-.insta img:hover{width: 57px; height: auto;border-radius: 5px;color: #8CC152; opacity: .8;}
+.insta img{width: 68px; height: auto;border-radius: 5px; margin: 2px 2px; border: 1px solid #a0d468;}
+.insta img:hover{width: 68px; height: auto;border-radius: 5px;color: #8CC152; opacity: .8;}
+/* .hearts{color:#E9573F;} */
+#instafeed a {width: 68px; height: auto;display:inline-block;margin: 2px;text-decoration: none;color: #a0d468;}
 
-#instafeed a {width: 57px; height: auto;display:inline-block;margin: 2px;text-decoration: none;color: #8CC152;}
-
-#instafeed .likes {width: 57px; height: auto;}
+#instafeed .likes {width: 68px; height: auto;}
 #instafeed .instaloca{font-size: 10px; /* position: absolute; */font-size: 8px;/* position: absolute;top: 48px;left: 7px; */color: #333;overflow: hidden;}
 
-#instafeed a:hover .likes {opacity:1;text-decoration: none;color: #a0d468;}
+#instafeed a:hover .likes {opacity:1;text-decoration: none;color: #8CC152;}
 h4.instafoot{margin: 0; padding-right:4px;}
 h4.instafoot span{padding-right:2px;}
 h4.instafoot a:hover{color: #a0d468; opacity: .5;}
