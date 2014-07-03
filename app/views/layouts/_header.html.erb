@@ -10,7 +10,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!-- <%= link_to "TREKKER.CO", root_path, class: "navbar-brand" %> --> <%= link_to image_tag("logo.png" , class: "navbar-brand logocss", :style => "width: 18%; height: 100px; position: absolute;top: -29px;") , root_path   %>
+      <%= link_to root_path,class: "navbar-brand" do %> 
+      <span class=""><%= image_tag "logobt.png", :style => "position: absolute;left: -23px;
+width: 45px;
+top: 2px;" %>Trekker.co</span>
+      
+      <% end %>
+        <!-- <%= link_to image_tag("logo.png" , class: "navbar-brand logocss", :style => "width: 18%; height: 100px; position: absolute;top: -29px;") , root_path   %> -->
     </div>
   
   
