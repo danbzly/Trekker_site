@@ -26,5 +26,16 @@ $(function() {
   }, 1000);
 });
 
+/* instagram */
 
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 1391563010,
+        accessToken: '1391563010.467ede5.619c49990ba54786be11544561bd6a14',
+        sortBy: 'most-recent',
+        limit: '6',
+        resolution: 'thumbnail',
+        template: '<a href="{{link}}" target="_blank" alt="{{location}}" ><img src="{{image}}"  title="{{location}}" /><div class="likes">&hearts; {{likes}}</div></a>'
+    });
+    userFeed.run();
 
