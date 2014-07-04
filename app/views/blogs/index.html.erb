@@ -1,24 +1,60 @@
+<div class="conainter-flex">
+<div class="wrapperimg" style="height: 100%; width: 100%;">
+
+<div class="container">
+		<div class="conht">
+
+			<div class="col-md-8 ">
+		
+			<h1 style="color:#fff;text-shadow: 1px 1px 1px #333, 3px 3px 5px #8CC152;position:relative;  text-align: left;">WELCOME TO TREKKER.CO</h1>
+			<h4 style="color:#fff;text-shadow: 1px 1px 1px #333;position:relative;  text-align: left;">This is where we say a little about what this site does.<br>This is where we say a little about what this site does.<br>This is where we say a little about what this site does.</h4>
+			</div>
+			<div class="col-md-4">
+			<h1 style="color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 3px 3px 5px #8CC152;">TRACK OUR TREK</h1>
+			<a href="/" class="btn btn-success btn-block" style="position:relative; "><h1 style="margin:0;">TREK IT!</h1></a>
+			</div>
+		</div>
+</div>
 
 
-<div class="wrapperimg" style="height: 225px; width: 100%;display:block;">
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!--
+<div class="wrapperimg container-flex" style="height: 225px; width: 100%;display:block;">
 <div class="container conht">
-<div class="col-md-8 ">
-<h1 style="color:#fff;text-shadow: 1px 1px 1px #333, 3px 3px 5px #8CC152;position:relative; top:40px; text-align: left;">WELCOME TO TREKKER.CO</h1>
-<h4 style="color:#fff;text-shadow: 1px 1px 1px #333;position:relative; top:40px; text-align: left;">This is where we say a little about what this site does.<br>This is where we say a little about what this site does.<br>This is where we say a little about what this site does.</h4>
-</div>
-<div class="col-md-4">
-<h1 style="color:#fff;position:relative; top:40px;text-shadow: 1px 1px 1px #333, 3px 3px 5px #8CC152;">TRACK OUR TREK</h1>
-<a href="/" class="btn btn-success btn-block" style="position:relative; top:40px;"><h1 style="margin:0;">TREK IT!</h1></a>
-</div>
-<!-- <button id="#blog" class="btn btn-success"><a href="#blog">TREK YOURSELF</a></button> -->
+<div class="row">
+			<div class="col-md-8 ">
+			<h1 style="color:#fff;text-shadow: 1px 1px 1px #333, 3px 3px 5px #8CC152;position:relative; top:40px; text-align: left;">WELCOME TO TREKKER.CO</h1>
+			<h4 style="color:#fff;text-shadow: 1px 1px 1px #333;position:relative; top:40px; text-align: left;">This is where we say a little about what this site does.<br>This is where we say a little about what this site does.<br>This is where we say a little about what this site does.</h4>
+			</div>
+			<div class="col-md-4">
+			<h1 style="color:#fff;position:relative; top:40px;text-shadow: 1px 1px 1px #333, 3px 3px 5px #8CC152;">TRACK OUR TREK</h1>
+			<a href="/" class="btn btn-success btn-block" style="position:relative; top:40px;"><h1 style="margin:0;">TREK IT!</h1></a>
+			</div>
 
-</div> </div><a name="blog"></a>
-<div style="border-top: #cccccc 4px solid;" class="clear"></div>
+</div>
+</div> 
+</div>
+<div class="clear"></div>-->
+<div class="container-flex">
+<div style="border-top: #cccccc 4px solid;" ></div>
+</div>
+
+
 <div class="container" style="padding-top: 10px;" >
-<h1 style="opacity: .99 !important;  font-weight: 400; font-size: 40px; text-shadow: 1px 1px #656D78;">SO YOU WANT TO TRAVEL?</h1>
-<div style="background-color: white; opacity: .8;background-attachment: scroll; position: relative;"> 
+	<h1 style="opacity: .99 !important;  font-weight: 400; font-size: 40px; text-shadow: 1px 1px #656D78;">SO YOU WANT TO TRAVEL?</h1>
 
-<div id="blogs" class="transitions-enabled" style="width: 100% !important;">
+	<div style="background-color: white; opacity: .8;background-attachment: scroll; position: relative;"> 
+
+		<div id="blogs" class="transitions-enabled" style="width: 100% !important;">
 <% @blogs.each do |blog| %>
 <div class="box panel panel-default">
       <%= link_to image_tag(blog.image.url(:medium)), blog %>
@@ -36,10 +72,10 @@
   </div>
   <% end %>
 </div>
-<div class="text-center" >
+			<div class="text-center" >
    <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
 </div>
 </div>
 </div>
-</div>
+
 
