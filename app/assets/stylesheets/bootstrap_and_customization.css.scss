@@ -9,7 +9,8 @@ $label-success-bg: #a0d468;
 .navbar {position: fixed;min-height: 50px;margin-bottom: 0px;/* border: 1px solid transparent; */}
 html{margin-top: 60px;}
 .navbar-brand{font-family: 'Lobster', cursive; color: #fff !important; text-shadow: 1px 1px 1px #333, 5px 2px 10px #8CC152; font-size: 40px;}
-.conht {height:300px;}
+.conht {height:225px; padding-top: 30px;
+}
 body{color:black;}
 h3, h5 {margin: 0;}
 h1 {text-align:center}
@@ -17,10 +18,10 @@ h1 {text-align:center}
 .fl-rt2{clear: both;float: right;margin-right: 8px;}
 .loco {color:#656D78; font-weight: 800; position: relative; top: -12px;}
 .parach {margin: 0 0 -29px;position: relative;top: -15px;}
-.imgwd{width: 100%; border-top: #8CC152 5px solid;border-bottom: #8CC152 5px solid;}
+.imgwd{width: 100%; border-top: #8CC152 5px solid;border-bottom: #8CC152 5px solid; height: 500px;}
 .logocss:hover {background-color: white; opacity: .8;}
 .btn-success:hover{color:#ffffff;background-color: #a0d468;border-color: #a0d468;}
-.wrapperimg {background: asset-url('home.png')no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; }  
+.wrapperimg {background: asset-url('theo6.png')no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; }  
 .alert {padding: 15px;margin-bottom: 0px !important;border: 1px solid transparent;border-radius: 4px;}
 .txt-lg{font-size: 30px;}
 .navbar-toggle {position: relative;float: right;margin-right: 15px;padding: 9px 10px;margin-top: 8px;margin-bottom: 8px;background-color: #8CC152;background-image: none;border: 1px solid transparent;border-radius: 4px;}
@@ -46,6 +47,18 @@ overflow: hidden !important;
 .insta {position: relative;}
 .insta img{width: 70px; height: auto;border-radius: 5px; margin: 2px 2px; }
 .insta img:hover{width: 70px; height: auto;border-radius: 5px;color: #8CC152; opacity: .8;}
+
+.insta-pg {position: relative;}
+.insta-pg img{width: 150px; height: auto;border-radius: 5px; margin: 2px 2px; }
+.insta-pg img:hover{width: 150px; height: auto;border-radius: 5px;color: #8CC152; opacity: .8;}
+.instafeed2 {display: inline-block;}
+.instafeed2 a {width: 150px !important; height: auto;display:inline-block;margin: 2px;text-decoration: none;color: #a0d468;}
+
+.instafeed2 .likes {width: 150px !important; height: auto;}
+.instafeed2 .instaloca{font-size: 10px; /* position: absolute; */font-size: 8px;/* position: absolute;top: 48px;left: 7px; */color: #333;overflow: hidden;}
+
+.instafeed2 a:hover .likes {opacity:1;text-decoration: none;color: #8CC152;}
+
 /* .hearts{color:#E9573F;} */
 #instafeed a {width: 70px; height: auto;display:inline-block;margin: 2px;text-decoration: none;color: #a0d468;}
 
@@ -55,7 +68,7 @@ overflow: hidden !important;
 #instafeed a:hover .likes {opacity:1;text-decoration: none;color: #8CC152;}
 h4.instafoot{margin: 0; padding-right:4px;}
 h4.instafoot span{padding-right:2px;}
-h4.instafoot a:hover{color: #a0d468; opacity: .5;}
+.instafoot:hover{color: #a0d468; opacity: .5;}
 
 @media only screen 
 and (min-device-width : 320px) 
