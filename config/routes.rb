@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+  resources :legs
+
   resources :blogs
 
   devise_for :users
   root "blogs#index"
   get "about" => "pages#about"
   get "instagram" => "pages#instagram"
+  get "trips" => "legs#trips"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -6,6 +6,7 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
   end
+  
 
   # GET /blogs/1
   def show

@@ -1,0 +1,135 @@
+<h1>Listing legs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tran air</th>
+      <th>Tran air cost</th>
+      <th>Tran air notes</th>
+      <th>Tran train</th>
+      <th>Tran train cost</th>
+      <th>Tran train notes</th>
+      <th>Tran bus</th>
+      <th>Tran bus cost</th>
+      <th>Tran bus notes</th>
+      <th>Tran met</th>
+      <th>Tran met cost</th>
+      <th>Tran met notes</th>
+      <th>Tran taxi</th>
+      <th>Tran taxi cost</th>
+      <th>Tran taxi notes</th>
+      <th>Tran car</th>
+      <th>Tran car cost</th>
+      <th>Tran car notes</th>
+      <th>Tran ferry</th>
+      <th>Tran ferry cost</th>
+      <th>Tran ferry notes</th>
+      <th>Tran extra</th>
+      <th>Tran extra cost</th>
+      <th>Tran extra notes</th>
+      <th>Food break</th>
+      <th>Food break cost</th>
+      <th>Food break notes</th>
+      <th>Tran total</th>
+      <th>Food lunch</th>
+      <th>Food lunch cost</th>
+      <th>Food lunch notes</th>
+      <th>Food dinner</th>
+      <th>Food dinner cost</th>
+      <th>Food dinner notes</th>
+      <th>Food snacks</th>
+      <th>Food snacks cost</th>
+      <th>Food snacks notes</th>
+      <th>Food total</th>
+      <th>Food extra</th>
+      <th>Food extra cost</th>
+      <th>Food extra notes</th>
+      <th>Lodging</th>
+      <th>Lodging cost</th>
+      <th>Lodging notes</th>
+      <th>Sight</th>
+      <th>Sight cost</th>
+      <th>Sight notes</th>
+      <th>Souvenirs</th>
+      <th>Souvenirs cost</th>
+      <th>Souvenirs notes</th>
+      <th>Bathroom</th>
+      <th>Bathroom cost</th>
+      <th>Bathroom notes</th>
+      <th>Bank</th>
+      <th>Bank cost</th>
+      <th>Bank notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @legs.each do |leg| %>
+      <tr>
+        <td><%= leg.tran_air %></td>
+        <td><%= leg.tran_air_cost %></td>
+        <td><%= leg.tran_air_notes %></td>
+        <td><%= leg.tran_train %></td>
+        <td><%= leg.tran_train_cost %></td>
+        <td><%= leg.tran_train_notes %></td>
+        <td><%= leg.tran_bus %></td>
+        <td><%= leg.tran_bus_cost %></td>
+        <td><%= leg.tran_bus_notes %></td>
+        <td><%= leg.tran_met %></td>
+        <td><%= leg.tran_met_cost %></td>
+        <td><%= leg.tran_met_notes %></td>
+        <td><%= leg.tran_taxi %></td>
+        <td><%= leg.tran_taxi_cost %></td>
+        <td><%= leg.tran_taxi_notes %></td>
+        <td><%= leg.tran_car %></td>
+        <td><%= leg.tran_car_cost %></td>
+        <td><%= leg.tran_car_notes %></td>
+        <td><%= leg.tran_ferry %></td>
+        <td><%= leg.tran_ferry_cost %></td>
+        <td><%= leg.tran_ferry_notes %></td>
+        <td><%= leg.tran_extra %></td>
+        <td><%= leg.tran_extra_cost %></td>
+        <td><%= leg.tran_extra_notes %></td>
+        <td><%= leg.food_break %></td>
+        <td><%= leg.food_break_cost %></td>
+        <td><%= leg.food_break_notes %></td>
+        <td><%= leg.tran_total %></td>
+        <td><%= leg.food_lunch %></td>
+        <td><%= leg.food_lunch_cost %></td>
+        <td><%= leg.food_lunch_notes %></td>
+        <td><%= leg.food_dinner %></td>
+        <td><%= leg.food_dinner_cost %></td>
+        <td><%= leg.food_dinner_notes %></td>
+        <td><%= leg.food_snacks %></td>
+        <td><%= leg.food_snacks_cost %></td>
+        <td><%= leg.food_snacks_notes %></td>
+        <td><%= leg.food_total %></td>
+        <td><%= leg.food_extra %></td>
+        <td><%= leg.food_extra_cost %></td>
+        <td><%= leg.food_extra_notes %></td>
+        <td><%= leg.lodging %></td>
+        <td><%= leg.lodging_cost %></td>
+        <td><%= leg.lodging_notes %></td>
+        <td><%= leg.sight %></td>
+        <td><%= leg.sight_cost %></td>
+        <td><%= leg.sight_notes %></td>
+        <td><%= leg.souvenirs %></td>
+        <td><%= leg.souvenirs_cost %></td>
+        <td><%= leg.souvenirs_notes %></td>
+        <td><%= leg.bathroom %></td>
+        <td><%= leg.bathroom_cost %></td>
+        <td><%= leg.bathroom_notes %></td>
+        <td><%= leg.bank %></td>
+        <td><%= leg.bank_cost %></td>
+        <td><%= leg.bank_notes %></td>
+        <td><%= link_to 'Show', leg %></td>
+        <td><%= link_to 'Edit', edit_leg_path(leg) %></td>
+        <td><%= link_to 'Destroy', leg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Leg', new_leg_path %>
