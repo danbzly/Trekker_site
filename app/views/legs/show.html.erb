@@ -1,284 +1,216 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+<div class="panel panel-default">
+<table class="table  table-hover table-bordered">
+ <tr class="success">
+ <th >Tranportation</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
 
-<p>
-  <strong>Tran air:</strong>
-  <%= @leg.tran_air %>
-</p>
 
-<p>
-  <strong>Tran air cost:</strong>
-  <%= @leg.tran_air_cost %>
-</p>
 
-<p>
-  <strong>Tran air notes:</strong>
-  <%= @leg.tran_air_notes %>
-</p>
+ <tr >
+ <td><%= @leg.tran_air %></td>
+ <td><%= @leg.tran_air_cost %></td>
+ <td><%= @leg.tran_air_notes %></td>
+ </tr>
+ <tr>
+  <tr>
+ <td><%= @leg.tran_train %></td>
+ <td><%= @leg.tran_train_cost %></td>
+ <td><%= @leg.tran_train_notes %></td>
+ </tr>
+ <tr>
+   <tr>
+ <td><%= @leg.tran_bus %></td>
+ <td><%= @leg.tran_bus_cost %></td>
+ <td><%= @leg.tran_bus_notes %></td>
+ </tr>
+ 
+ <tr>
+ <td><%= @leg.tran_met %></td>
+ <td><%= @leg.tran_met_cost %></td>
+ <td><%= @leg.tran_met_notes %></td>
+ </tr>
 
-<p>
-  <strong>Tran train:</strong>
-  <%= @leg.tran_train %>
-</p>
+ <tr>
+ <td><%= @leg.tran_taxi %></td>
+ <td><%= @leg.tran_taxi_cost %></td>
+ <td><%= @leg.tran_taxi_notes %></td>
+ </tr>
+ 
+  <tr>
+ <td><%= @leg.tran_car %></td>
+ <td><%= @leg.tran_car_cost %></td>
+ <td><%= @leg.tran_car_notes %></td>
+ </tr>
+ 
+  <tr>
+ <td><%= @leg.tran_ferry %></td>
+ <td><%= @leg.tran_ferry_cost %></td>
+ <td><%= @leg.tran_ferry_notes %></td>
+ </tr>
+  <tr class="info">
+ <td>TOTAL:</td>
+ <td><%= @leg.tran_total %></td>
+ <td></td>
+ </tr>
+ 
+  <tr class="warning">
+ <td>Tips:</td>
+ <td><%= @leg.tran_extra_notes %></td>
+ <td></td>
+ </tr>
+ <tr>
+ <td></td>
+ <td></td>
+ <td></td>
+ </tr>
+ <tr class="success">
+ <th >Food</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td><%= @leg.food_break %></td>
+ <td><%= @leg.food_break_cost %></td>
+ <td><%= @leg.food_break_notes %></td>
+ </tr>
+ <tr>
+ <td><%= @leg.food_lunch %></td>
+ <td><%= @leg.food_lunch_cost %></td>
+ <td><%= @leg.food_lunch_notes %></td>
+ </tr>
+ 
+ <tr>
+ <td> <%= @leg.food_dinner %></td>
+ <td><%= @leg.food_dinner_cost %></td>
+ <td><%= @leg.food_dinner_notes %></td>
+ </tr>
+ 
+ <tr>
+ <td><%= @leg.food_snacks %></td>
+ <td><%= @leg.food_snacks_cost %></td>
+ <td><%= @leg.food_snacks_notes %></td>
+ </tr>
+ <tr class="info">
+ <td>TOTAL:</td>
+ <td><%= @leg.food_total %></td>
+ <td></td>
+ </tr>
 
-<p>
-  <strong>Tran train cost:</strong>
-  <%= @leg.tran_train_cost %>
-</p>
+  <tr class="warning">
+ <td >Food Tips:</td>
+ <td><%= @leg.food_extra_notes %></td>
+ <td></td>
+ </tr>
+  <tr>
+ <td></td>
+ <td></td>
+ <td></td>
+ </tr>
+  <tr class="success">
+ <th >Lodging</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+  <tr>
+ <td><%= @leg.lodging %></td>
+ <td><%= @leg.lodging_cost %></td>
+ <td><%= @leg.lodging_notes %></td>
+ </tr>
+ <tr class="success">
+ <th >Sightseeing</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td><%= @leg.sight %></td>
+ <td><%= @leg.sight_cost %></td>
+ <td><%= @leg.sight_notes %></td>
+ </tr>
+ <tr class="success">
+ <th >Souvenirs:</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td><%= @leg.souvenirs %></td>
+ <td><%= @leg.souvenirs_cost %></td>
+ <td><%= @leg.souvenirs_notes %></td>
+ </tr>
+<tr class="success">
+ <th >Bathroom:</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td><%= @leg.bathroom %></td>
+ <td><%= @leg.bathroom_cost %></td>
+ <td><%= @leg.bathroom_notes %></td>
+ </tr>
+ <tr class="success">
+ <th >Bank:</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td><%= @leg.bank %></td>
+ <td><%= @leg.bank_cost %></td>
+ <td><%= @leg.bank_notes %></td>
+ </tr>
+<tr class="success">
+<td></td>
+ <td></td>
+ <td></td>
+</tr>
 
-<p>
-  <strong>Tran train notes:</strong>
-  <%= @leg.tran_train_notes %>
-</p>
+ </table>
 
-<p>
-  <strong>Tran bus:</strong>
-  <%= @leg.tran_bus %>
-</p>
 
-<p>
-  <strong>Tran bus cost:</strong>
-  <%= @leg.tran_bus_cost %>
-</p>
-
-<p>
-  <strong>Tran bus notes:</strong>
-  <%= @leg.tran_bus_notes %>
-</p>
-
-<p>
-  <strong>Tran met:</strong>
-  <%= @leg.tran_met %>
-</p>
-
-<p>
-  <strong>Tran met cost:</strong>
-  <%= @leg.tran_met_cost %>
-</p>
-
-<p>
-  <strong>Tran met notes:</strong>
-  <%= @leg.tran_met_notes %>
-</p>
-
-<p>
-  <strong>Tran taxi:</strong>
-  <%= @leg.tran_taxi %>
-</p>
-
-<p>
-  <strong>Tran taxi cost:</strong>
-  <%= @leg.tran_taxi_cost %>
-</p>
-
-<p>
-  <strong>Tran taxi notes:</strong>
-  <%= @leg.tran_taxi_notes %>
-</p>
-
-<p>
-  <strong>Tran car:</strong>
-  <%= @leg.tran_car %>
-</p>
-
-<p>
-  <strong>Tran car cost:</strong>
-  <%= @leg.tran_car_cost %>
-</p>
-
-<p>
-  <strong>Tran car notes:</strong>
-  <%= @leg.tran_car_notes %>
-</p>
-
-<p>
-  <strong>Tran ferry:</strong>
-  <%= @leg.tran_ferry %>
-</p>
-
-<p>
-  <strong>Tran ferry cost:</strong>
-  <%= @leg.tran_ferry_cost %>
-</p>
-
-<p>
-  <strong>Tran ferry notes:</strong>
-  <%= @leg.tran_ferry_notes %>
-</p>
-
-<p>
-  <strong>Tran extra:</strong>
-  <%= @leg.tran_extra %>
-</p>
-
-<p>
-  <strong>Tran extra cost:</strong>
-  <%= @leg.tran_extra_cost %>
-</p>
-
-<p>
-  <strong>Tran extra notes:</strong>
-  <%= @leg.tran_extra_notes %>
-</p>
-
-<p>
-  <strong>Food break:</strong>
-  <%= @leg.food_break %>
-</p>
-
-<p>
-  <strong>Food break cost:</strong>
-  <%= @leg.food_break_cost %>
-</p>
-
-<p>
-  <strong>Food break notes:</strong>
-  <%= @leg.food_break_notes %>
-</p>
-
-<p>
-  <strong>Tran total:</strong>
-  <%= @leg.tran_total %>
-</p>
-
-<p>
-  <strong>Food lunch:</strong>
-  <%= @leg.food_lunch %>
-</p>
-
-<p>
-  <strong>Food lunch cost:</strong>
-  <%= @leg.food_lunch_cost %>
-</p>
-
-<p>
-  <strong>Food lunch notes:</strong>
-  <%= @leg.food_lunch_notes %>
-</p>
-
-<p>
-  <strong>Food dinner:</strong>
-  <%= @leg.food_dinner %>
-</p>
-
-<p>
-  <strong>Food dinner cost:</strong>
-  <%= @leg.food_dinner_cost %>
-</p>
-
-<p>
-  <strong>Food dinner notes:</strong>
-  <%= @leg.food_dinner_notes %>
-</p>
-
-<p>
-  <strong>Food snacks:</strong>
-  <%= @leg.food_snacks %>
-</p>
-
-<p>
-  <strong>Food snacks cost:</strong>
-  <%= @leg.food_snacks_cost %>
-</p>
-
-<p>
-  <strong>Food snacks notes:</strong>
-  <%= @leg.food_snacks_notes %>
-</p>
-
-<p>
-  <strong>Food total:</strong>
-  <%= @leg.food_total %>
-</p>
-
-<p>
-  <strong>Food extra:</strong>
-  <%= @leg.food_extra %>
-</p>
-
-<p>
-  <strong>Food extra cost:</strong>
-  <%= @leg.food_extra_cost %>
-</p>
-
-<p>
-  <strong>Food extra notes:</strong>
-  <%= @leg.food_extra_notes %>
-</p>
-
-<p>
-  <strong>Lodging:</strong>
-  <%= @leg.lodging %>
-</p>
-
-<p>
-  <strong>Lodging cost:</strong>
-  <%= @leg.lodging_cost %>
-</p>
-
-<p>
-  <strong>Lodging notes:</strong>
-  <%= @leg.lodging_notes %>
-</p>
-
-<p>
-  <strong>Sight:</strong>
-  <%= @leg.sight %>
-</p>
-
-<p>
-  <strong>Sight cost:</strong>
-  <%= @leg.sight_cost %>
-</p>
-
-<p>
-  <strong>Sight notes:</strong>
-  <%= @leg.sight_notes %>
-</p>
-
-<p>
-  <strong>Souvenirs:</strong>
-  <%= @leg.souvenirs %>
-</p>
-
-<p>
-  <strong>Souvenirs cost:</strong>
-  <%= @leg.souvenirs_cost %>
-</p>
-
-<p>
-  <strong>Souvenirs notes:</strong>
-  <%= @leg.souvenirs_notes %>
-</p>
-
-<p>
-  <strong>Bathroom:</strong>
-  <%= @leg.bathroom %>
-</p>
-
-<p>
-  <strong>Bathroom cost:</strong>
-  <%= @leg.bathroom_cost %>
-</p>
-
-<p>
-  <strong>Bathroom notes:</strong>
-  <%= @leg.bathroom_notes %>
-</p>
-
-<p>
-  <strong>Bank:</strong>
-  <%= @leg.bank %>
-</p>
-
-<p>
-  <strong>Bank cost:</strong>
-  <%= @leg.bank_cost %>
-</p>
-
-<p>
-  <strong>Bank notes:</strong>
-  <%= @leg.bank_notes %>
-</p>
 
 <%= link_to 'Edit', edit_leg_path(@leg) %> |
 <%= link_to 'Back', legs_path %>
+</div>
+</div>
+<div class="col-md-2"></div>
+</div>
+
+<!--
+
+<br>
+<td>
+  <strong>Tran extra:</strong>
+  <%= @leg.tran_extra %>
+</td>
+
+<td>
+  <strong>Tran extra cost:</strong>
+  <%= @leg.tran_extra_cost %>
+</td>
+
+<td>
+  <strong>Tran extra notes:</strong>
+  <%= @leg.tran_extra_notes %>
+</td>
+
+<td>
+  <strong>Food extra:</strong>
+  <%= @leg.food_extra %>
+</td>
+
+<td>
+  <strong>Food extra cost:</strong>
+  <%= @leg.food_extra_cost %>
+</td>
+
+<td>
+  <strong>Food extra notes:</strong>
+  <%= @leg.food_extra_notes %>
+</td>
+
+-->
