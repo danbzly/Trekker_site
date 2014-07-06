@@ -226,14 +226,15 @@
  <td class="form-group"><%= f.text_field :bank_cost, class: "form-control" %></td>
  <td class="form-group"><%= f.text_area :bank_notes, :rows => 3, :cols => 65, class: "form-control" %></td>
  </tr>
- 
-
-</table>
-<div class="panel-footer"></div>
-</div>
+ <div style="position: relative;">
  <div class="form-group">
             <%= f.submit "CREATE LEG", class: "btn btn-success btn-lg btn-block txt-lg" %>
   </div>
+ </div>
+</table>
+<div class="panel-footer"></div>
+</div>
+ 
  
   
   
@@ -259,4 +260,3 @@
 </div>
 <div class="col-md-2"></div>
 </div>
-
