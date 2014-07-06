@@ -1,3 +1,9 @@
+<div class="container">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+<div class="panel panel-default">
+<table class="table  table-hover table-bordered">
+ 
 <%= form_for(@leg) do |f| %>
   <% if @leg.errors.any? %>
     <div id="error_explanation">
@@ -10,232 +16,232 @@
       </ul>
     </div>
   <% end %>
+  
 
-  <div class="field">
-    <%= f.label :tran_air %><br>
-    <%= f.text_field :tran_air %>
+<tr class="success">
+ <th >Tranportation</th>
+ <th>COST (dont need $ sign)</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <tr >
+ <td>AIR<!-- <%= @leg.tran_air %> --></td>
+ <td class="form-group">
+ <%= f.text_field :tran_air_cost, class: "form-control" %>
+  </td>
+ <td class="form-group">
+ <%= f.text_area :tran_air_notes, :rows => 3, :cols => 65, class: "form-control" %></td>
+ </tr>
+ <tr>
+  <tr>
+ <td>Train<!-- <%= @leg.tran_train %> --></td>
+ <td class="form-group">    
+ <%= f.text_field :tran_train_cost, class: "form-control" %>
+</td>
+ <td class="form-group">
+ <%= f.text_area :tran_train_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ </tr>
+ <tr>
+   <tr>
+ <td>Bus<!-- <%= @leg.tran_bus %> --></td>
+ <td class="form-group">    
+ <%= f.text_field :tran_bus_cost, class: "form-control" %>
+</td>
+ <td class="form-group">   
+  <%= f.text_area :tran_bus_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ </tr>
+ 
+ <tr>
+ <td>Metro<!-- <%= @leg.tran_met %> --></td>
+ <td class="form-group">
+ <%= f.text_field :tran_met_cost, class: "form-control" %>
+</td>
+ <td  class="form-group">
+ <%= f.text_area :tran_met_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ </tr>
+
+ <tr>
+ <td>Taxi<!-- <%= @leg.tran_taxi %> --></td>
+ <td class="form-group">
+ <%= f.text_field :tran_taxi_cost, class: "form-control" %>
+</td>
+ <td class="form-group">
+ <%= f.text_area :tran_taxi_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ </tr>
+ 
+  <tr>
+ <td>Car Rental<!-- <%= @leg.tran_car %> --></td>
+ <td class="form-group">
+ <%= f.text_field :tran_car_cost, class: "form-control" %>
+</td>
+ <td class="form-group">
+ <%= f.text_area :tran_car_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ </tr>
+ 
+  <tr>
+ <td>Ferry<!-- <%= @leg.tran_ferry %> --></td>
+ <td class="form-group">
+ <%= f.text_field :tran_ferry_cost, class: "form-control" %>
+</td>
+ <td class="form-group">
+ <%= f.text_area :tran_ferry_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ </tr>
+  <tr class="info">
+ <td>TOTAL:</td>
+ <td class="form-group">
+ <%= f.text_field :tran_total, class: "form-control" %></td>
+ <td></td>
+ </tr>
+ 
+  <tr class="warning">
+ <td>Tips:</td>
+ <td></td>
+ <td class="form-group">
+ <%= f.text_area :tran_extra_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ 
+ </tr>
+ <tr>
+ <td></td>
+ <td></td>
+ <td></td>
+ </tr>
+ <tr class="success">
+ <th >Food</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td>Breakfast<!-- <%= @leg.food_break %> --></td>
+ <td class="form-group">
+ <%= f.text_field :food_break_cost, class: "form-control" %>
+</td>
+ <td class="form-group">
+ <%= f.text_area :food_break_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ </tr>
+ <tr>
+ <td>Lunch<!-- <%= @leg.food_lunch %> --></td>
+ <td class="form-group">
+ <%= f.text_field :food_lunch_cost, class: "form-control" %>
+</td>
+ <td class="form-group">
+ <%= f.text_area :food_lunch_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ </tr>
+ 
+ <tr>
+ <td>Dinner <!-- <%= @leg.food_dinner %> --></td>
+ <td class="form-group">
+ <%= f.text_field :food_dinner_cost, class: "form-control" %>
+</td>
+ <td class="form-group">
+ <%= f.text_area :food_dinner_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ </tr>
+ 
+ <tr>
+ <td>Snacks<!-- <%= @leg.food_snacks %> --></td>
+ <td class="form-group">
+ <%= f.text_field :food_snacks_cost, class: "form-control" %>
+</td>
+ <td class="form-group">
+ <%= f.text_area :food_snacks_notes, :rows => 3, :cols => 65, class: "form-control" %>
+</td>
+ </tr>
+ <tr class="info">
+ <td>TOTAL:</td>
+ <td class="form-group">
+ <%= f.text_field :food_total, class: "form-control" %>
+</td>
+ <td></td>
+ </tr>
+
+  <tr class="warning">
+ <td >Food Tips:</td>
+ <td></td>
+ <td class="form-group">
+ <%= f.text_area :food_extra_notes, :rows => 3, :cols => 65, class: "form-control" %>
+ </td>
+ 
+ </tr>
+  <tr>
+ <td></td>
+ <td></td>
+ <td></td>
+ </tr>
+  <tr class="success">
+ <th >Lodging</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+  <tr>
+ <td class="form-group"><%= f.text_field :lodging, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_field :lodging_cost, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_area :lodging_notes, :rows => 3, :cols => 65, class: "form-control" %></td>
+ </tr>
+ <tr class="success">
+ <th >Sightseeing</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td class="form-group"><%= f.text_field :sight, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_field :sight_cost, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_area :sight_notes, :rows => 3, :cols => 65, class: "form-control" %></td>
+ </tr>
+ <tr class="success">
+ <th >Souvenirs:</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td class="form-group"><%= f.text_field :souvenirs, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_field :souvenirs_cost, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_area :souvenirs_notes, :rows => 3, :cols => 65, class: "form-control" %></td>
+ </tr>
+<tr class="success">
+ <th >Bathroom:</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td class="form-group"><%= f.text_field :bathroom, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_field :bathroom_cost, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_area :bathroom_notes, :rows => 3, :cols => 65, class: "form-control" %></td>
+ </tr>
+ <tr class="success">
+ <th >Bank:</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td class="form-group"><%= f.text_field :bank, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_field :bank_cost, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_area :bank_notes, :rows => 3, :cols => 65, class: "form-control" %></td>
+ </tr>
+ 
+<tr class="success">
+<td></td>
+ <td></td>
+ <td></td>
+</tr>
+
+ <div class="form-group">
+            <%= f.submit "CREATE LEG", class: "btn btn-success btn-lg btn-block txt-lg" %>
   </div>
-  <div class="field">
-    <%= f.label :tran_air_cost %><br>
-    <%= f.text_field :tran_air_cost %>
+ 
+  </table>
   </div>
-  <div class="field">
-    <%= f.label :tran_air_notes %><br>
-    <%= f.text_area :tran_air_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_train %><br>
-    <%= f.text_field :tran_train %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_train_cost %><br>
-    <%= f.text_field :tran_train_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_train_notes %><br>
-    <%= f.text_area :tran_train_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_bus %><br>
-    <%= f.text_field :tran_bus %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_bus_cost %><br>
-    <%= f.text_field :tran_bus_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_bus_notes %><br>
-    <%= f.text_area :tran_bus_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_met %><br>
-    <%= f.text_field :tran_met %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_met_cost %><br>
-    <%= f.text_field :tran_met_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_met_notes %><br>
-    <%= f.text_area :tran_met_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_taxi %><br>
-    <%= f.text_field :tran_taxi %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_taxi_cost %><br>
-    <%= f.text_field :tran_taxi_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_taxi_notes %><br>
-    <%= f.text_area :tran_taxi_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_car %><br>
-    <%= f.text_field :tran_car %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_car_cost %><br>
-    <%= f.text_field :tran_car_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_car_notes %><br>
-    <%= f.text_area :tran_car_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_ferry %><br>
-    <%= f.text_field :tran_ferry %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_ferry_cost %><br>
-    <%= f.text_field :tran_ferry_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_ferry_notes %><br>
-    <%= f.text_area :tran_ferry_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_extra %><br>
-    <%= f.text_field :tran_extra %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_extra_cost %><br>
-    <%= f.text_field :tran_extra_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_extra_notes %><br>
-    <%= f.text_area :tran_extra_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :food_break %><br>
-    <%= f.text_field :food_break %>
-  </div>
-  <div class="field">
-    <%= f.label :food_break_cost %><br>
-    <%= f.text_field :food_break_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :food_break_notes %><br>
-    <%= f.text_area :food_break_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :tran_total %><br>
-    <%= f.text_field :tran_total %>
-  </div>
-  <div class="field">
-    <%= f.label :food_lunch %><br>
-    <%= f.text_field :food_lunch %>
-  </div>
-  <div class="field">
-    <%= f.label :food_lunch_cost %><br>
-    <%= f.text_field :food_lunch_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :food_lunch_notes %><br>
-    <%= f.text_area :food_lunch_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :food_dinner %><br>
-    <%= f.text_field :food_dinner %>
-  </div>
-  <div class="field">
-    <%= f.label :food_dinner_cost %><br>
-    <%= f.text_field :food_dinner_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :food_dinner_notes %><br>
-    <%= f.text_area :food_dinner_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :food_snacks %><br>
-    <%= f.text_field :food_snacks %>
-  </div>
-  <div class="field">
-    <%= f.label :food_snacks_cost %><br>
-    <%= f.text_field :food_snacks_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :food_snacks_notes %><br>
-    <%= f.text_area :food_snacks_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :food_total %><br>
-    <%= f.text_field :food_total %>
-  </div>
-  <div class="field">
-    <%= f.label :food_extra %><br>
-    <%= f.text_field :food_extra %>
-  </div>
-  <div class="field">
-    <%= f.label :food_extra_cost %><br>
-    <%= f.text_field :food_extra_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :food_extra_notes %><br>
-    <%= f.text_area :food_extra_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :lodging %><br>
-    <%= f.text_field :lodging %>
-  </div>
-  <div class="field">
-    <%= f.label :lodging_cost %><br>
-    <%= f.text_field :lodging_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :lodging_notes %><br>
-    <%= f.text_area :lodging_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :sight %><br>
-    <%= f.text_field :sight %>
-  </div>
-  <div class="field">
-    <%= f.label :sight_cost %><br>
-    <%= f.text_field :sight_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :sight_notes %><br>
-    <%= f.text_area :sight_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :souvenirs %><br>
-    <%= f.text_field :souvenirs %>
-  </div>
-  <div class="field">
-    <%= f.label :souvenirs_cost %><br>
-    <%= f.text_field :souvenirs_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :souvenirs_notes %><br>
-    <%= f.text_area :souvenirs_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :bathroom %><br>
-    <%= f.text_field :bathroom %>
-  </div>
-  <div class="field">
-    <%= f.label :bathroom_cost %><br>
-    <%= f.text_field :bathroom_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :bathroom_notes %><br>
-    <%= f.text_area :bathroom_notes %>
-  </div>
-  <div class="field">
-    <%= f.label :bank %><br>
-    <%= f.text_field :bank %>
-  </div>
-  <div class="field">
-    <%= f.label :bank_cost %><br>
-    <%= f.text_field :bank_cost %>
-  </div>
-  <div class="field">
-    <%= f.label :bank_notes %><br>
-    <%= f.text_area :bank_notes %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  
 <% end %>
+
+</div>
+<div class="col-md-2"></div>
+</div>
