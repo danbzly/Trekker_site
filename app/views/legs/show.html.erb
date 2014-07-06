@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
-<div class="col-md-2"></div>
-<div class="col-md-8">
+<!-- <div class="col-md-2"></div> -->
+<div class="col-md-9">
 <div class="panel panel-default">
 <table class="table  table-hover table-bordered">
  <tr class="success">
@@ -174,9 +174,44 @@
 <%= link_to 'Back', legs_path %>
 </div>
 </div>
-<div class="col-md-2"></div>
-</div>
+<!-- <div class="col-md-2"></div> -->
 
+<!--   If we ever want to add a side bar delete both col-md-2 above, make col-md-8 col-md-9 and add in code below -->			   
+		 <div class="col-md-3">
+					    <div class="panel panel-success">
+	                       <div class="panel-heading text-left"><h5>Trekker.co on Instagram <%= link_to 'http://instagram.com/trekkerdotco?ref=badge', :target => "_blank" do %>    
+	                       <%= image_tag "instagram.png", :style => "width: 20px; float: right;", class: "instafoot" %></h5>
+	                       <% end %>
+	                       </div>
+	                         <div class="panel-body">
+							   	<div class="insta" id="instafeed">
+								   	
+							   	</div>
+							   	
+
+							 </div>
+					       </div>
+						</div>
+					  
+				  
+			   </div>
+				
+		
+		
+<!-- 		instagram -->
+<script>
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 1391563010,
+        accessToken: '1391563010.467ede5.619c49990ba54786be11544561bd6a14',
+        sortBy: 'most-recent',
+        limit: '12',
+        resolution: 'thumbnail',
+        template: '<a href="{{link}}" target="_blank" alt="{{location}}" ><img src="{{image}}"  title="{{location}}" /></div></a>'
+    });
+    userFeed.run();
+
+</script>
 <!--
 
 <br>
