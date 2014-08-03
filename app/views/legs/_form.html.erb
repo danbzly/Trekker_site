@@ -1,7 +1,7 @@
 <div class="container">
 <div class="col-md-2"></div>
 <div class="col-md-8">
-<div class="panel panel-default">
+
 
  
 <%= form_for(@leg) do |f| %>
@@ -20,7 +20,7 @@
 <table class="table  table-hover table-bordered">
 <tr class="success">
  <th >Tranportation</th>
- <th>COST (dont need $ sign)</th>
+ <th>COST (dont need $)</th>
  <th>NOTES</th>
  </tr>
  <tr>
@@ -226,14 +226,17 @@
  <td class="form-group"><%= f.text_field :bank_cost, class: "form-control" %></td>
  <td class="form-group"><%= f.text_area :bank_notes, :rows => 3, :cols => 65, class: "form-control" %></td>
  </tr>
+ <tr>
+ <table>
  <div style="position: relative;">
  <div class="form-group">
             <%= f.submit "CREATE LEG", class: "btn btn-success btn-lg btn-block txt-lg" %>
   </div>
  </div>
+ </table>
+ </tr>
 </table>
-<div class="panel-footer"></div>
-</div>
+
  
  
   

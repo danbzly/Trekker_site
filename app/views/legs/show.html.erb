@@ -176,7 +176,32 @@
 </div>
 <!-- <div class="col-md-2"></div> -->
 
-<!--   If we ever want to add a side bar delete both col-md-2 above, make col-md-8 col-md-9 and add in code below -->			   
+<!--   If we ever want to add a side bar delete both col-md-2 above, make col-md-8 col-md-9 and add in code below -->	
+<% if user_signed_in? %>
+
+<div class="col-md-3">
+<div class="panel panel-success">
+	                       <div class="panel-heading text-left">Admin Panel
+	                       </div>
+	                       <div class="panel-body">
+	                       <ul>
+		                       <li><%= link_to new_blog_path do %>
+							   		<span class="glyphicon glyphicon-plus"></span> New Blog
+							   		<% end %>
+							   	</li>
+							   	<li><%= link_to new_leg_path do %>
+							   		<span class="glyphicon glyphicon-plus"></span> New Leg
+							   		<% end %>
+							   	</li>
+							   	<li><%= link_to "Account Settings", edit_user_registration_path %></li>
+							   	<li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+	                       </ul>
+	                       </div>
+</div>
+</div>
+
+
+<% else %>   
 		 <div class="col-md-3">
 					    <div class="panel panel-success">
 	                       <div class="panel-heading text-left"><h5>Trekker.co on Instagram <%= link_to 'http://instagram.com/trekkerdotco?ref=badge', :target => "_blank" do %>    
@@ -192,7 +217,7 @@
 							 </div>
 					       </div>
 						</div>
-					  
+					<% end %>  
 				  
 			   </div>
 				

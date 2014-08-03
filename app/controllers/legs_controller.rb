@@ -1,10 +1,11 @@
 class LegsController < ApplicationController
   before_action :set_leg, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :correct_user, only: [:edit, :update, :destroy]
   # GET /legs
   # GET /legs.json
   def index
-    @legs = Leg.all
+    @legs = Leg.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
   end
 
   # GET /legs/1
@@ -60,6 +61,12 @@ class LegsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def correct_user
+      @leg = current_user.legs.find_by(id: params[:id])
+      redirect_to legs_path, notice: "Not authorized to edit this pin" if @leg.nil?
+    end
+    
 
   private
     # Use callbacks to share common setup or constraints between actions.
