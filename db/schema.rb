@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140705195216) do
+ActiveRecord::Schema.define(version: 20140804210018) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -88,7 +88,10 @@ ActiveRecord::Schema.define(version: 20140705195216) do
     t.text     "bank_notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
+
+  add_index "legs", ["user_id"], name: "index_legs_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
