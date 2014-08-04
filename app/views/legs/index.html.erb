@@ -38,31 +38,30 @@ margin-bottom: 10px;">
 <div style="border-top: #cccccc 4px solid;" ></div>
 </div>
 
-
 <div class="container" style="padding-top: 10px;" >
-	<h1 style="opacity: .99 !important;  font-weight: 400; font-size: 40px; text-shadow: 1px 1px #656D78;">Trip Legs</h1>
+	<h1 style="opacity: .99 !important;  font-weight: 400; font-size: 40px; text-shadow: 1px 1px #656D78;">SO YOU WANT TO TRAVEL?</h1>
 
 	<div style="background-color: white; opacity: .8;background-attachment: scroll; position: relative;"> 
 
 		<div id="blogs" class="transitions-enabled" style="width: 100% !important;">
-
-    <% @legs.each do |leg| %>
-      
-       
-<div class="box panel panel-default">hello
+<% @legs.each do |leg| %>
+<div class="box panel panel-default">
+image
       <div class="panel-body">
+      <h3>title</h3><br>
+      <h5 class="loco">Location: </h5><br>
+      <p class="parach">descript</p><br>
       <div class="fl-rt">
-       <td><%= link_to 'Show', leg %></td>
-        <td><%= link_to 'Edit', edit_leg_path(leg) %></td>
-        <td><%= link_to 'Destroy', leg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    
+      <%= link_to 'Read More', leg, class: "btn btn-success" %></div><br>
+      <% if leg.user == current_user %>
+        <div class="fl-rt2"><%= link_to 'Edit', edit_leg_path(leg) %> |
+        <%= link_to 'Delete', leg, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+      <% end %>
     </div>
   </div>
   <% end %>
 </div>
-			<div class="text-center" >
-</div>
+
 </div>
 </div>
 
