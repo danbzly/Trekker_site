@@ -23,44 +23,30 @@ class LegsController < ApplicationController
   end
 
   # POST /legs
-  # POST /legs.json
-  def create
-    @leg = Leg.new(leg_params)
-
-    respond_to do |format|
+   def create
+    @leg = current_user.legs.build(leg_params)
       if @leg.save
-        format.html { redirect_to @leg, notice: 'Leg was successfully created.' }
-        format.json { render :show, status: :created, location: @leg }
+        redirect_to @leg, notice: 'Leg was successfully created.'
       else
-        format.html { render :new }
-        format.json { render json: @leg.errors, status: :unprocessable_entity }
+        render action: 'new'
       end
     end
-  end
 
   # PATCH/PUT /legs/1
-  # PATCH/PUT /legs/1.json
   def update
-    respond_to do |format|
       if @leg.update(leg_params)
-        format.html { redirect_to @leg, notice: 'Leg was successfully updated.' }
-        format.json { render :show, status: :ok, location: @leg }
+        redirect_to @leg, notice: 'Leg was successfully updated.'
+#         render :show, status: :ok, location: @leg 
       else
-        format.html { render :edit }
-        format.json { render json: @leg.errors, status: :unprocessable_entity }
+        render action: 'edit'
       end
     end
-  end
 
   # DELETE /legs/1
-  # DELETE /legs/1.json
   def destroy
     @leg.destroy
-    respond_to do |format|
-      format.html { redirect_to legs_url, notice: 'Leg was successfully destroyed.' }
-      format.json { head :no_content }
+     redirect_to legs_url, notice: 'Leg was successfully destroyed.' 
     end
-  end
   
   def correct_user
       @leg = current_user.legs.find_by(id: params[:id])
