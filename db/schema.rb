@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140804210018) do
+ActiveRecord::Schema.define(version: 20140809170730) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -89,6 +89,14 @@ ActiveRecord::Schema.define(version: 20140804210018) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.string   "img_map_file_name"
+    t.string   "img_map_content_type"
+    t.integer  "img_map_file_size"
+    t.datetime "img_map_updated_at"
+    t.string   "map_img_file_name"
+    t.string   "map_img_content_type"
+    t.integer  "map_img_file_size"
+    t.datetime "map_img_updated_at"
   end
 
   add_index "legs", ["user_id"], name: "index_legs_on_user_id"

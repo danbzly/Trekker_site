@@ -18,6 +18,15 @@
   <% end %>
   
 <table class="table  table-hover table-bordered">
+<tr>
+<td>
+<div class="form-group">
+    <%= f.label :map_img %> <br>
+ <div class="btn btn-success btn-meduim crser">Upload your Image
+    <%= f.file_field :map_img, class: "form-control upload" %>
+ </div>
+</td>
+</tr>
 <tr class="success">
  <th >Tranportation</th>
  <th>COST (dont need $)</th>

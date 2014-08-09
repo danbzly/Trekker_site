@@ -46,7 +46,8 @@ margin-bottom: 10px;">
 		<div id="blogs" class="transitions-enabled" style="width: 100% !important;">
 <% @legs.each do |leg| %>
 <div class="box panel panel-default">
-image
+      <%= link_to image_tag(leg.map_img.url(:medium)), leg %>
+
       <div class="panel-body">
       <h3>title</h3><br>
       <h5 class="loco">Location: </h5><br>
