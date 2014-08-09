@@ -20,6 +20,8 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1/edit
   def edit
+    @blog = Blog.find_by_slug(params[:id])
+
   end
 
   # POST /blogs
@@ -51,7 +53,7 @@ class BlogsController < ApplicationController
     end
   
 def correct_user
-      @blog = current_user.blogs.find_by(id: params[:id])
+      @blog = current_user.blogs.find_by_slug(params[:id])
       redirect_to blogs_path, notice: "Not authorized to edit this pin" if @blog.nil?
     end
     
