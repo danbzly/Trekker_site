@@ -22,7 +22,7 @@ margin-bottom: 10px;">
 			<div class="col-xs-12 col-sm-4 col-md-3" style="opacity: .95 !important; background-color:#fff; border-radius: 5px 5px 5px 5px;">
 			<div style="margin-top: 5px;
 margin-bottom: 10px;">
-			<a href="/legs" class="btn btn-success btn-block" style="position:relative; "><h3 style="margin:0;">Trip Total: $1030.44</h3></a>
+			<a href="/legs" class="btn btn-success btn-block" style="position:relative; "><h3 style="margin:0;"><h3>Trip Total: $1030.44</h3></a>
 			</div>
 			</div>
 			</div>
@@ -39,19 +39,19 @@ margin-bottom: 10px;">
 </div>
 
 <div class="container" style="padding-top: 10px;" >
-	<h1 style="opacity: .99 !important;  font-weight: 400; font-size: 40px; text-shadow: 1px 1px #656D78;">SO YOU WANT TO TRAVEL?</h1>
+	<h1 style="opacity: .99 !important;  font-weight: 400; font-size: 40px; text-shadow: 1px 1px #656D78;">YOU SPENT WHAAAT?</h1>
 
 	<div style="background-color: white; opacity: .8;background-attachment: scroll; position: relative;"> 
 
 		<div id="blogs" class="transitions-enabled" style="width: 100% !important;">
 <% @legs.each do |leg| %>
-<div class="box panel panel-default">
-      <%= link_to image_tag(leg.map_img.url(:medium)), leg %>
+<div class="boxleg panel panel-default">
+      <%= link_to image_tag(leg.map_img.url(:medium)), leg, class: "htfx" %>
 
       <div class="panel-body">
-      <h3>title </h3><br>
-      <h5 class="loco">Location: </h5><br>
-      <p class="parach">descript</p><br>
+      <h3>Location: <%= leg.leg_header %></h3><br>
+      <h3 class="loco">Total Leg Cost: <%= leg.total_cost %></h3><br>
+      <p class="parach"></p><br>
       <div class="fl-rt">
       <%= link_to 'Read More', leg, class: "btn btn-success" %></div><br>
       <% if leg.user == current_user %>

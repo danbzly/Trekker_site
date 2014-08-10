@@ -1,7 +1,21 @@
-<p id="notice"><%= notice %></p>
+<div class="container bckbtn">
+			<div class="col-md-12">
+			  <%= link_to 'Back', legs_path, class: "label label-success" %>
+			</div>
+</div>
+
+
 <div class="container">
 <!-- <div class="col-md-2"></div> -->
 <div class="col-md-9">
+ <div class="box2 panel panel-default">			      
+			        <%= image_tag @leg.map_img.url(:large), class: "imgwd" %>
+			      <div class="panel-body">
+				        <h1 class="text-left">Location: <%= @leg.leg_header %></h1>
+				        <h3>Total Leg Cost: <%= @leg.total_cost %></h3>
+				        <p style="padding:10px 0px; font-size: 18px;"><h4>Notes:</h4> <%=raw @leg.leg_description %></p>
+			      </div>
+ </div>
 <div class="panel panel-default">
 <table class="table  table-hover table-bordered">
  <tr class="success">

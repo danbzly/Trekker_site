@@ -1,13 +1,16 @@
 #blogs {margin: 0 auto;width: 100% !important;}
 
 .box {margin: 5px;width: 370px;}
-
 .box:hover {border: 1px solid #a0d468; box-shadow: 0px 0px 7px  #ccc;}
-
 .box img {width: 100%;border-top: #8CC152 5px solid; height: 250px;}
-
 .box img:hover {color: #8CC152; opacity: .8;}
+
+.boxleg {margin: 5px;width: 370px;}
+.boxleg:hover {border: 1px solid #a0d468; box-shadow: 0px 0px 7px  #ccc;}
+.boxleg img {width: 100%;border-top: #8CC152 5px solid; height: 150px;}
+.boxleg img:hover {color: #8CC152; opacity: .8;}
 .box2 {width: 100%;}
+.box2 img {width: 100%;border-top: #8CC152 5px solid; height: 250px;}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
@@ -15,6 +18,9 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 .box {margin: 5px;width: 275px;}
 .box img {width: 100%;border-top: #8CC152 5px solid; height: auto !important;}
+
+.boxleg {margin: 5px;width: 275px;}
+.boxleg img {width: 100%;border-top: #8CC152 5px solid; height: auto !important;}
 
 
 

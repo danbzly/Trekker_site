@@ -16,20 +16,52 @@
       </ul>
     </div>
   <% end %>
-  
+ <table class="table  table-hover table-bordered">
+	<tr>
+		<td>
+			<div class="form-group">
+			    <%= f.label :map_img %> <br>
+				 <div class="btn btn-success btn-meduim crser col-xs-12">Upload your Image
+				    <%= f.file_field :map_img, class: "form-control upload" %>
+				 </div>
+			</div>
+		</td>
+		
+		<td class="success">
+			<div class="form-group">
+			    <%= f.label :total_cost %> <br>
+				 <div>Leg Cost need to add $
+				    <%= f.text_field :total_cost, class: "form-control" %>
+				 </div>
+			</div>
+		</td>
+		
+		<td class="info">
+			<div class="form-group">
+			    <%= f.label :leg_header %> <br>
+				 <div>Leg title
+				    <%= f.text_field :leg_header, class: "form-control" %>
+				 </div>
+			</div>
+		</td>
+	</tr>
+ </table> 
+  <table class="table  table-hover table-bordered">
+	  <tr>
+		  <td>
+		  <div class="form-group">
+		    <%= f.label :leg_description %> <br>
+			 <div class="btn btn-success btn-meduim crser ">Leg Cost need to add $
+			    <%= f.text_area :leg_description,:rows => 8, :cols => 110, class: "form-control" %>
+			 </div>
+		  </div>
+		  </td>
+	  </tr>
+  </table>
 <table class="table  table-hover table-bordered">
-<tr>
-<td>
-<div class="form-group">
-    <%= f.label :map_img %> <br>
- <div class="btn btn-success btn-meduim crser">Upload your Image
-    <%= f.file_field :map_img, class: "form-control upload" %>
- </div>
-</td>
-</tr>
 <tr class="success">
  <th >Tranportation</th>
- <th>COST (dont need $)</th>
+ <th>Cost (dont need $)</th>
  <th>NOTES</th>
  </tr>
  <tr>

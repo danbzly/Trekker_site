@@ -6,7 +6,7 @@
 $ ->
   $('#blogs').imagesLoaded ->
     $('#blogs').masonry
-      itemSelector: '.box'
+      itemSelector: '.box, .boxleg'
       isFitWidth: true
       isOriginTop: false
       

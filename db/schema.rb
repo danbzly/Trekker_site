@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140809201044) do
+ActiveRecord::Schema.define(version: 20140810030422) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -102,6 +102,9 @@ ActiveRecord::Schema.define(version: 20140809201044) do
     t.string   "Leg_title"
     t.string   "leg_slug"
     t.string   "legslug"
+    t.string   "total_cost"
+    t.text     "leg_description"
+    t.string   "leg_header"
   end
 
   add_index "legs", ["user_id"], name: "index_legs_on_user_id"
