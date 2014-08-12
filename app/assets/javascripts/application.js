@@ -16,6 +16,7 @@
 //= require jquery.turbolinks
 //= require turbolinks
 //= require masonry/jquery.masonry
+//= require fancybox
 //= require_tree .
 
 
