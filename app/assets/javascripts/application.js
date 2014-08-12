@@ -26,3 +26,11 @@ $(function() {
   }, 1000);
 });
 
+
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+
