@@ -9,6 +9,55 @@
 			    <div class="box2 panel panel-default">			      
 			        <%= image_tag @blog.image.url(:large), class: "imgwd" %>
 			      <div class="panel-body">
+			      <div class="tab_container">
+					      <% if @blog.bg_im_1.present? %>
+						      <%= link_to @blog.bg_im_1.url(:large), :class => "fancybox", :rel => "gallery1", :title => "#{@blog.im_1_des}" do %> 
+								  <%= image_tag @blog.bg_im_1.url(:thumb) %>
+			    	          <% end %>
+		    	          <% end %>
+		    	          
+		    	          <% if @blog.bg_im_2.present? %>
+			    	          <%= link_to @blog.bg_im_2.url(:large), :class => "fancybox", :rel => "gallery1", :title => "#{@blog.im_2_des}" do %> 
+								  <%= image_tag @blog.bg_im_2.url(:thumb) %>
+			    	          <% end %>
+		    	          <% end %>
+		    	          
+		    	          <% if @blog.bg_im_3.present? %>
+			    	          <%= link_to @blog.bg_im_3.url(:large), :class => "fancybox", :rel => "gallery1", :title => "#{@blog.im_3_des}" do %> 
+								  <%= image_tag @blog.bg_im_3.url(:thumb) %>
+			    	          <% end %>
+		    	          <% end %>
+		    	          
+		    	          <% if @blog.bg_im_4.present? %>
+			    	          <%= link_to @blog.bg_im_4.url(:large), :class => "fancybox", :rel => "gallery1", :title => "#{@blog.im_4_des}" do %> 
+								  <%= image_tag @blog.bg_im_4.url(:thumb) %>
+			    	          <% end %>
+		    	          <% end %>
+		    	          
+		    	          <% if @blog.bg_im_5.present? %>
+			    	          <%= link_to @blog.bg_im_5.url(:large), :class => "fancybox", :rel => "gallery1", :title => "#{@blog.im_5_des}" do %> 
+								  <%= image_tag @blog.bg_im_5.url(:thumb) %>
+			    	          <% end %>
+		    	          <% end %>
+		    	          
+		    	          <% if @blog.bg_im_6.present? %>
+			    	          <%= link_to @blog.bg_im_6.url(:large), :class => "fancybox", :rel => "gallery1", :title => "#{@blog.im_6_des}" do %> 
+								  <%= image_tag @blog.bg_im_6.url(:thumb) %>
+			    	          <% end %>
+		    	          <% end %>
+		    	          
+		    	          <% if @blog.bg_im_7.present? %>
+			    	          <%= link_to @blog.bg_im_7.url(:large), :class => "fancybox", :rel => "gallery1", :title => "#{@blog.im_7_des}" do %> 
+								  <%= image_tag @blog.bg_im_7.url(:thumb) %>
+			    	          <% end %>
+		    	          <% end %>
+		    	          
+		    	          <% if @blog.bg_im_8.present? %>
+			    	          <%= link_to @blog.bg_im_8.url(:large), :class => "fancybox", :rel => "gallery1", :title => "#{@blog.im_8_des}" do %> 
+								  <%= image_tag @blog.bg_im_8.url(:thumb) %>
+			    	          <% end %>
+		    	          <% end %>
+			      </div>
 				        <h2><%= @blog.title %></h2>
 				        <h5>Location: <%= @blog.category %></h5>
 				        <p style="padding:10px 0px; font-size: 18px;"><%=raw @blog.body_text %></p>
@@ -81,6 +130,14 @@
     });
     userFeed.run();
 
+</script>
+<script>
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
 </script>
 <!-- add in for like -->
 <!-- <a href="{{link}}" target="_blank" alt="{{location}}" ><img src="{{image}}"  title="{{location}}" /><div class="likes"><span class="hearts">&hearts;</span> {{likes}}</div></a> -->

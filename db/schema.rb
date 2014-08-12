@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140810030422) do
+ActiveRecord::Schema.define(version: 20140812030925) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -26,6 +26,46 @@ ActiveRecord::Schema.define(version: 20140810030422) do
     t.datetime "image_updated_at"
     t.text     "body_text"
     t.string   "slug"
+    t.string   "bg_im_1_file_name"
+    t.string   "bg_im_1_content_type"
+    t.integer  "bg_im_1_file_size"
+    t.datetime "bg_im_1_updated_at"
+    t.string   "bg_im_2_file_name"
+    t.string   "bg_im_2_content_type"
+    t.integer  "bg_im_2_file_size"
+    t.datetime "bg_im_2_updated_at"
+    t.string   "bg_im_3_file_name"
+    t.string   "bg_im_3_content_type"
+    t.integer  "bg_im_3_file_size"
+    t.datetime "bg_im_3_updated_at"
+    t.string   "bg_im_4_file_name"
+    t.string   "bg_im_4_content_type"
+    t.integer  "bg_im_4_file_size"
+    t.datetime "bg_im_4_updated_at"
+    t.string   "bg_im_5_file_name"
+    t.string   "bg_im_5_content_type"
+    t.integer  "bg_im_5_file_size"
+    t.datetime "bg_im_5_updated_at"
+    t.string   "bg_im_6_file_name"
+    t.string   "bg_im_6_content_type"
+    t.integer  "bg_im_6_file_size"
+    t.datetime "bg_im_6_updated_at"
+    t.string   "bg_im_7_file_name"
+    t.string   "bg_im_7_content_type"
+    t.integer  "bg_im_7_file_size"
+    t.datetime "bg_im_7_updated_at"
+    t.string   "bg_im_8_file_name"
+    t.string   "bg_im_8_content_type"
+    t.integer  "bg_im_8_file_size"
+    t.datetime "bg_im_8_updated_at"
+    t.string   "im_1_des"
+    t.string   "im_2_des"
+    t.string   "im_3_des"
+    t.string   "im_4_des"
+    t.string   "im_5_des"
+    t.string   "im_6_des"
+    t.string   "im_7_des"
+    t.string   "im_8_des"
   end
 
   add_index "blogs", ["user_id"], name: "index_blogs_on_user_id"
