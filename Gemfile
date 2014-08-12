@@ -19,7 +19,8 @@ gem 'masonry-rails', '~> 0.2.0'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 gem 'stringex', '~> 2.5.2'
-gem 'fancybox2-rails'
+gem 'fancybox-rails', :github => 'greinacker/fancybox-rails', :branch => 'rails4'
+
 
 
 group :development, :test do
