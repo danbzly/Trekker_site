@@ -50,8 +50,19 @@
         
         <% end %>
          <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Photos", instagram_path %></li>
-    </ul>
+		         <li><%= link_to "Track Us", legs_path %></li>
+				 <li><%= link_to "Photos", instagram_path %></li>
+				 <li> 
+					 <%= link_to 'http://instagram.com/trekkerdotco', :target => "_blank" do %> 
+					 	<span class="instagr instafoot"><%= image_tag "instagram.png", :width => "20" %></span>
+					 <% end %>
+				 </li>
+				 <li> 
+					 <%= link_to 'https://www.facebook.com/Trekker.co', :target => "_blank" do %> 
+					 	<span class="instafoot"><%= image_tag "fb.png", :width => "20" %></span>
+					 <% end %>
+				 </li>
+         </ul>
         
     </ul>  
     </div>

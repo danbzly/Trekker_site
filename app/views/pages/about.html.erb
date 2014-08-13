@@ -1,1 +1,91 @@
-This is a test
+<div class="container bckbtn">
+			<div class="col-xs-12 col-md-12">
+			  <%= link_to 'Back', blogs_path, class: "label label-success" %>
+			</div>
+			<div class="col-xs-12 col-md-10">
+			<p style="font-size:35px; text-align:center;font-family:Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;">About US</p>
+			</div>
+		</div>
+		
+		
+<div class="container">
+	<div class="col-xs-12 col-md-9">
+	<p>
+	<%= image_tag("d&j.jpg", :alt => "Daniel and Jen in Aspen Colorado", :title => "Daniel and Jen in the Maroon Bells near Aspen Colorado", :width => "50%", :style => "float:left;margin: 0px 10px 0px 0px;", :class =>"thumbnail") %>
+	<span style="font-size:15px; font-family:Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;">
+	Hi! We’re Daniel and Jen Beasley (aka ‘Team Beasley’) and we’re trekking through Europe for 3 months! Welcome to our site - we’re glad you’re here! We’re excited to share our experiences with you! First, let us tell you a bit about ourselves.<br><br>
+We recently celebrated our four year anniversary and we’re loving every bit of doing life together. We love to travel, try new food, enjoy the great outdoors and meet new people. When we first got married, we set a few goals for ourselves and prayed for God’s help to do it. Our first goal was to get out of debt. Following <a href="http://www.daveramsey.com/home/" target="_blank">Dave Ramsey’s</a> method, we paid off $80,000 dollars in business and personal debt in a year and a half, and we can honestly say, it’s changed our lives. Our next goal, was to get in shape and with the help of our terrific friends at <a href="http://www.crossfitoceanislebeach.com/" target="_blank">CrossFit Ocean Isle Beach</a>, we did that. We lead a completely different life than we did when we first met and married and we’re so glad we do. It’s enabled us to be in the spot we’re in today.<br><br>
+For a while, we’ve been wanting to move and Daniel suggested that while we had everything packed up in boxes, it would be the perfect time to stuff everything in storage and do the traveling we’ve always dreamed of doing. Well, here we are - doing just that, and we’re looking forward to sharing our journey with you. We’ll of course, share plenty of pictures, tons of information about each area we visit, and finally (and what we hope you’ll find very helpful), the financial information for each leg of our trip. Since maintaining our finances is so important to us, how we spend our money on this trip is crucial. We wanted to set a budget for our trip and see if we could do it. We’ll share the cost of everything we incur on this trip - hopefully you’ll find it useful and possibly use it to plan your own trip and pursue your travel dreams as well! <br><br>
+So, buckle up! Here we go!<br></span>
+
+<b><h5>`Daniel and Jen Beasley</h5></b>
+	</p>
+	
+	
+	</div>
+         
+            
+<!--   If we ever want to add a side bar delete both col-md-2 above, make col-md-8 col-md-9 and add in code below -->			   
+		<% if user_signed_in? %>
+
+<div class="col-xs-12  col-md-3">
+<div class="panel panel-success">
+	                       <div class="panel-heading text-left">Admin Panel
+	                       </div>
+	                       <div class="panel-body">
+	                       <ul>
+		                       <li><%= link_to new_blog_path do %>
+							   		<span class="glyphicon glyphicon-plus"></span> New Blog
+							   		<% end %>
+							   	</li>
+							   	<li><%= link_to new_leg_path do %>
+							   		<span class="glyphicon glyphicon-plus"></span> New Leg
+							   		<% end %>
+							   	</li>
+							   	<li><%= link_to "Account Settings", edit_user_registration_path %></li>
+							   	<li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+	                       </ul>
+	                       </div>
+</div>
+</div>
+
+
+<% else %>   
+		 <div class="col-xs-12  col-md-3">
+					    <div class="panel panel-success">
+	                       <div class="panel-heading text-left"><h5 class="fntchg">Trekker.co on Instagram <%= link_to 'http://instagram.com/trekkerdotco?ref=badge', :target => "_blank" do %>    
+	                       <%= image_tag "instagram.png", :style => "width: 20px; float: right;", class: "instafoot" %></h5>
+	                       <% end %>
+	                       </div>
+	                         <div class="panel-body">
+							   	<div class="insta" id="instafeed">
+								   	
+							   	</div>
+							   	
+
+							 </div>
+					       </div>
+						</div>
+					<% end %>  
+				  
+			   </div>
+		
+		
+		
+<!-- 		instagram -->
+<script>
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 1391563010,
+        accessToken: '1391563010.467ede5.619c49990ba54786be11544561bd6a14',
+        sortBy: 'most-recent',
+        limit: '12',
+        resolution: 'thumbnail',
+        template: '<a href="{{link}}" target="_blank" alt="{{location}}" ><img src="{{image}}"  title="{{location}}" /></div></a>'
+    });
+    userFeed.run();
+
+</script>
+
+<!-- add in for like -->
+<!-- <a href="{{link}}" target="_blank" alt="{{location}}" ><img src="{{image}}"  title="{{location}}" /><div class="likes"><span class="hearts">&hearts;</span> {{likes}}</div></a> -->

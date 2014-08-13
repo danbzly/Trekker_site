@@ -183,9 +183,9 @@
  </table>
 
 
-
-<%= link_to 'Edit', edit_leg_path(@leg) %> |
-<%= link_to 'Back', legs_path %>
+<% if @leg.user == current_user %>
+<%= link_to 'Edit', edit_leg_path(@leg) %>
+<% end %>
 </div>
 </div>
 <!-- <div class="col-md-2"></div> -->
