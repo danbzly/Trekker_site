@@ -81,8 +81,8 @@ and (max-width : 480px) {
 .conht {height:470px !important;}
 .conht-inter{display: none;}
 .conht-inter-mobile{display: block;}
-.b0t70b-haAclf{display: none;}
-#featureListPanel{display: none;}
+div .b0t70b-haAclf{display: none !important;}
+div #featureListPanel{display: none !important;}
 
 }
 @media only screen 
