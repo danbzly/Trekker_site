@@ -39,7 +39,7 @@ margin-bottom: 10px;">
 		<div id="blogs" class="transitions-enabled" style="width: 100% !important;">
 <% @blogs.each do |blog| %>
 <div class="box panel panel-default">
-      <%= link_to image_tag(blog.image.url(:medium)), blog %>
+      <%= link_to image_tag(blog.image.url(:medium)), blog, :onClick => "ga('send', 'event', { eventCategory: 'FrontPage', eventAction: 'BlogBtn', eventLabel: 'Clicked'});" %>
       <div class="panel-body">
       <h3><%= blog.title %></h3><br>
       <h5 class="loco">Location: <%= blog.category %></h5><br>
