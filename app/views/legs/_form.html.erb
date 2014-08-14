@@ -267,6 +267,16 @@
  <td class="form-group"><%= f.text_field :bank_cost, class: "form-control" %></td>
  <td class="form-group"><%= f.text_area :bank_notes, :rows => 3, :cols => 65, class: "form-control" %></td>
  </tr>
+ <tr class="success">
+ <th >Miscellaneous:</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td class="form-group"><%= f.text_field :misc, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_field :misc_cost, class: "form-control" %></td>
+ <td class="form-group"><%= f.text_area :misc_notes, :rows => 3, :cols => 65, class: "form-control" %></td>
+ </tr>
  <tr>
  <table>
  <div style="position: relative;">
@@ -283,15 +293,15 @@
   
   
   <!-- 
-  <%= f.text_field :tran_air %>
+  <%= f.text_field :tran_air, class: "form-control" %>
   <%= f.text_field :tran_train %>
   <%= f.text_field :tran_bus %>
   <%= f.text_field :tran_met %>
   <%= f.text_field :tran_taxi %>
   <%= f.text_field :tran_car %>
   <%= f.text_field :tran_ferry %>
-  <%= f.text_field :tran_extra %>
-  <%= f.text_field :tran_extra_cost %>
+  
+  
   <%= f.text_field :food_break %>
   <%= f.text_field :food_lunch %>
   <%= f.text_field :food_dinner %>

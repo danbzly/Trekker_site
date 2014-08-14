@@ -25,8 +25,8 @@
  </tr>
  <tr>
  <tr >
- <td>AIR<!-- <%= @leg.tran_air %> --></td>
- <td>$ <%=raw @leg.tran_air_cost %></td>
+ <td width="10%">AIR<!-- <%= @leg.tran_air %> --></td>
+ <td width="25%">$ <%=raw @leg.tran_air_cost %></td>
  <td><%= @leg.tran_air_notes %></td>
  </tr>
  <tr>
@@ -165,7 +165,7 @@
  <td><%= @leg.bathroom_notes %></td>
  </tr>
  <tr class="success">
- <th >Bank:</th>
+ <th >Bank Fees:</th>
  <th>COST</th>
  <th>NOTES</th>
  </tr>
@@ -174,6 +174,19 @@
  <td>$ <%=raw @leg.bank_cost %></td>
  <td><%= @leg.bank_notes %></td>
  </tr>
+ <tr class="success">
+ <th >Miscellaneous:</th>
+ <th>COST</th>
+ <th>NOTES</th>
+ </tr>
+ <tr>
+ <td><%= @leg.misc %></td>
+ <td>$ <%=raw @leg.misc_cost %></td>
+ <td><%=raw @leg.misc_notes %></td>
+ </tr>
+ 
+ 
+
 <tr class="success">
 <td></td>
  <td></td>
@@ -253,21 +266,7 @@
 </script>
 <!--
 
-<br>
-<td>
-  <strong>Tran extra:</strong>
-  <%= @leg.tran_extra %>
-</td>
 
-<td>
-  <strong>Tran extra cost:</strong>
-  <%= @leg.tran_extra_cost %>
-</td>
-
-<td>
-  <strong>Tran extra notes:</strong>
-  <%= @leg.tran_extra_notes %>
-</td>
 
 <td>
   <strong>Food extra:</strong>
@@ -281,7 +280,7 @@
 
 <td>
   <strong>Food extra notes:</strong>
-  <%= @leg.food_extra_notes %>
+  
 </td>
 
 -->
