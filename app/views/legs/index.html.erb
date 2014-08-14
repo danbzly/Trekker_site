@@ -49,14 +49,14 @@ margin-bottom: 10px;">
 		<div id="blogs" class="transitions-enabled" style="width: 100% !important;">
 <% @legs.each do |leg| %>
 <div class="boxleg panel panel-default">
-      <%= link_to image_tag(leg.map_img.url(:medium)), leg, class: "htfx" %>
+      <%= link_to image_tag(leg.map_img.url(:medium)), leg, class: "htfx", :onClick => "ga('send', 'event', { eventCategory: 'LegsPage', eventAction: 'LegImg', eventLabel: 'Clicked'});" %>
 
       <div class="panel-body">
       <h3>Location: <%= leg.leg_header %></h3><br>
       <h3 class="loco">Total Leg Cost: <%= leg.total_cost %></h3><br>
       <p class="parach"></p><br>
       <div class="fl-rt">
-      <%= link_to 'Read More', leg, class: "btn btn-success" %></div><br>
+      <%= link_to 'Read More', leg, class: "btn btn-success", :onClick => "ga('send', 'event', { eventCategory: 'LegsPage', eventAction: 'LegBtn', eventLabel: 'Clicked'});" %></div><br>
       <% if leg.user == current_user %>
         <div class="fl-rt2"><%= link_to 'Edit', edit_leg_path(leg) %> |
         <%= link_to 'Delete', leg, method: :delete, data: { confirm: 'Are you sure?' } %></div>
