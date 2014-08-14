@@ -15,7 +15,7 @@
 			<div class="col-md-3">
 			<div style="margin-top: 20px;
 margin-bottom: 10px;">
-			<a href="/legs" class="btn btn-success btn-block" style="position:relative; "><h1 style="margin:0;">TRACK US!</h1></a>
+			<a href="/legs" onClick="ga('send', 'event', { eventCategory: 'FrontPage', eventAction: 'TrackUsBtn', eventLabel: 'Clicked'});" class="btn btn-success btn-block" style="position:relative; "><h1 style="margin:0;">TRACK US!</h1></a>
 			</div>
 			</div>
 			</div>
@@ -45,7 +45,7 @@ margin-bottom: 10px;">
       <h5 class="loco">Location: <%= blog.category %></h5><br>
       <p class="parach"><%= blog.description %></p><br>
       <div class="fl-rt">
-      <%= link_to 'Read More', blog, class: "btn btn-success" %></div><br>
+      <%= link_to 'Read More', blog, class: "btn btn-success", :onClick => "ga('send', 'event', { eventCategory: 'FrontPage', eventAction: 'BlogBtn', eventLabel: 'Clicked'});"  %></div><br>
       <% if blog.user == current_user %>
         <div class="fl-rt2"><%= link_to 'Edit', edit_blog_path(blog) %> |
         <%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></div>
