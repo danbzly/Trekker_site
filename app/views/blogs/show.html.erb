@@ -118,7 +118,7 @@
 	                         <div class="panel-body">
 							   	<div>
 							   	
-							   	<%= link_to "Details Here", leg_path(@blog.leg_link), :class => "btn btn-success btn-block fntchg2" %>
+							   	<%= link_to "Details Here", leg_path(@blog.leg_link), :class => "btn btn-success btn-block fntchg2", :onClick => "ga('send', 'event', { eventCategory: 'FrontPage', eventAction: 'BlogCostTotal', eventLabel: 'Clicked'});" %>
 								   
 							   	</div>
 							   	
