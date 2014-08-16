@@ -17,16 +17,16 @@
 			      </div>
  </div>
 <div class="panel panel-default">
-<table class="table  table-hover table-bordered">
+<table class="table  table-hover table-bordered table-condensed">
  <tr class="success">
  <th >Tranportation</th>
  <th>COST</th>
  <th>NOTES</th>
  </tr>
  <tr>
- <tr >
- <td width="10%">AIR<!-- <%= @leg.tran_air %> --></td>
- <td width="25%">$ <%=raw @leg.tran_air_cost %></td>
+ <tr>
+ <td>AIR<!-- <%= @leg.tran_air %> --></td>
+ <td>$ <%=raw @leg.tran_air_cost %></td>
  <td><%= @leg.tran_air_notes %></td>
  </tr>
  <tr>
@@ -175,7 +175,7 @@
  <td><%= @leg.bank_notes %></td>
  </tr>
  <tr class="success">
- <th >Miscellaneous:</th>
+ <th >Misc::</th>
  <th>COST</th>
  <th>NOTES</th>
  </tr>
@@ -227,13 +227,13 @@
 	                       </div>
 </div>
 </div>
-\
+
 
 
 <% else %>   
 		 <div class="col-md-3">
 		
-					    <div class="panel panel-success">
+			 <div class="panel panel-success">
 	                       <div class="panel-heading text-left"><h5>Trekker.co on Instagram <%= link_to 'http://instagram.com/trekkerdotco?ref=badge', :target => "_blank" do %>    
 	                       <%= image_tag "instagram.png", :style => "width: 20px; float: right;", class: "instafoot" %></h5>
 	                       <% end %>
@@ -246,7 +246,7 @@
 
 							 </div>
 					       </div>
-						</div>
+		</div>
 		
 					<% end %>  
 				  

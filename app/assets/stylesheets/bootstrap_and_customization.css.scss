@@ -4,6 +4,8 @@ $label-success-bg: #a0d468;
 
 @import 'bootstrap';
 @import url(http://fonts.googleapis.com/css?family=Lobster);
+
+
 .navbar-inverse {border-top: #8CC152 5px solid;border-bottom: #dddddd 1px solid;border-bottom-opacity: 0.25;background-color: white;font-size: 21px !important;height: 60px;}
 .navbar-brand {position: absolute;display: block;top: 0;left: 50%;height: 100%;margin-left: -129px !important;color: #333 !important;font-size: 30px;text-shadow: #E6E9ED 1px 1px;font-weight: 500;}
 .navbar {position: fixed;min-height: 50px;margin-bottom: 0px;/* border: 1px solid transparent; */}
@@ -78,6 +80,7 @@ h4.instafoot span{padding-right:2px;}
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 480px) {
+.table>thead>tr>th, .table>thead>tr>td, .table>tbody>tr>th, .table>tbody>tr>td, .table>tfoot>tr>th, .table>tfoot>tr>td{padding: 3px !important;}
 .conht {height:470px !important;}
 .conht-inter{display: none;}
 .conht-inter-mobile{display: block;}
