@@ -65,6 +65,6 @@ def correct_user
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :category, :description, :body_text, :image, :slug, :bg_im_1, :bg_im_2, :bg_im_3, :bg_im_4, :bg_im_5, :bg_im_6, :bg_im_7, :bg_im_8, :im_1_des, :im_2_des, :im_3_des, :im_4_des, :im_5_des, :im_6_des, :im_7_des, :im_8_des)
+      params.require(:blog).permit(:title, :category, :description, :body_text, :image, :slug, :bg_im_1, :bg_im_2, :bg_im_3, :bg_im_4, :bg_im_5, :bg_im_6, :bg_im_7, :bg_im_8, :im_1_des, :im_2_des, :im_3_des, :im_4_des, :im_5_des, :im_6_des, :im_7_des, :im_8_des, :leg_link)
     end
 end

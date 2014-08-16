@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140814040229) do
+ActiveRecord::Schema.define(version: 20140816003058) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(version: 20140814040229) do
     t.string   "im_6_des"
     t.string   "im_7_des"
     t.string   "im_8_des"
+    t.string   "leg_link"
   end
 
   add_index "blogs", ["user_id"], name: "index_blogs_on_user_id"

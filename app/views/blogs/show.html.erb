@@ -110,11 +110,29 @@
 
 							 </div>
 					       </div>
-						</div>
-					<% end %>  
-				  
-			   </div>
-		
+					    <% if @blog.leg_link? %>
+					    <div class="panel panel-success">
+	                       <div class="panel-heading text-center"><h4 class="fntchg2">See The Total Cost of This Leg</h4>   
+	                       
+	                       </div>
+	                         <div class="panel-body">
+							   	<div>
+							   	
+							   	<%= link_to "Details Here", leg_path(@blog.leg_link), :class => "btn btn-success btn-block fntchg2" %>
+								   
+							   	</div>
+							   	
+
+							 </div>
+					       </div>
+					    		<% end %>				    						
+					  
+					
+		</div>	
+		  
+			   
+		<% end %> 
+		</div> 
 		
 		
 <!-- 		instagram -->
