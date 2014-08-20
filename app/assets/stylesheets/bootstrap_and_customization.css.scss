@@ -55,7 +55,7 @@ overflow: hidden !important;
 .insta-pg {position: relative;}
 .insta-pg img{width: 150px; height: auto;border-radius: 5px; margin: 2px 2px; }
 .insta-pg img:hover{width: 150px; height: auto;border-radius: 5px;color: #8CC152; opacity: .8;}
-.instafeed2 {display: inline-block;}
+.instafeed2 {display: inline-block; vertical-align: text-top;}
 .instafeed2 a {width: 150px !important; height: auto;display:inline-block;margin: 2px;text-decoration: none;color: #a0d468;}
 
 .instafeed2 .likes {width: 150px !important; height: auto;}
@@ -84,6 +84,10 @@ and (max-width : 480px) {
 iframe #featureListPanel{display: none !important;}
 div #featureListPanel{display: none !important;}
 .google-maps{width: 100% !important;}
+.insta-pg img{width: 250px; height: auto;border-radius: 5px; margin: 2px 2px; }
+.insta-pg img:hover{width: 250px; height: auto;border-radius: 5px;color: #8CC152; opacity: .8;}
+.instafeed2 .likes {width: 250px !important; height: auto;}
+
 }
 @media only screen 
 and (min-width : 320px) 
