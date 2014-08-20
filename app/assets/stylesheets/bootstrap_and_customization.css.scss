@@ -84,8 +84,8 @@ and (max-width : 480px) {
 iframe #featureListPanel{display: none !important;}
 div #featureListPanel{display: none !important;}
 .google-maps{width: 100% !important;}
-.insta-pg img{width: 250px; height: auto;border-radius: 5px; margin: 2px 2px; }
-.insta-pg img:hover{width: 250px; height: auto;border-radius: 5px;color: #8CC152; opacity: .8;}
+.insta-pg img{width: 250px !important; height: auto;border-radius: 5px; margin: 2px 2px; }
+.insta-pg img:hover{width: 250px !important; height: auto;border-radius: 5px;color: #8CC152; opacity: .8;}
 .instafeed2 .likes {width: 250px !important; height: auto;}
 .instafeed2 {display: inline-block; vertical-align: text-top; width: 259px !important;}
 .instafeed2 a {width: 259px !important; height: auto;display:inline-block;margin: 2px;text-decoration: none;color: #a0d468;}
