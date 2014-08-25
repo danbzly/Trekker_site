@@ -55,7 +55,8 @@ margin-bottom: 10px;">
 
       <div class="panel-body">
       <h3>Location: <%= leg.leg_header %></h3><br>
-      <h3 class="loco">Total Leg Cost: <%= leg.total_cost %></h3><br>
+      <h3 class="loco">Total Leg Cost: <%= leg.total_cost %></h3>
+      <h5 style="margin:0;"><i>(see a total break down of our expenses)</i></h5><br>
       <p class="parach"></p><br>
       <div class="fl-rt">
       <%= link_to 'Read More', leg, class: "btn btn-success", :onClick => "ga('send', 'event', { eventCategory: 'LegsPage', eventAction: 'LegBtn', eventLabel: 'Clicked'});" %></div><br>

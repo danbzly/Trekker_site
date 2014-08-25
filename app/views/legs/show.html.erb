@@ -12,16 +12,17 @@
 			        <%= image_tag @leg.map_img.url(:large), class: "imgwd" %>
 			      <div class="panel-body">
 				        <h1 class="text-left">Location: <%= @leg.leg_header %></h1>
-				        <h3>Total Leg Cost: <%= @leg.total_cost %></h3>
+				        <h4>Total Leg Cost: <%= @leg.total_cost %></h4>
+				        <h4>Average Daily Cost: <%= @leg.avcost %></h4>
 				        <p style="padding:10px 0px; font-size: 18px;"><h4>Notes:</h4> <%=raw @leg.leg_description %></p>
 			      </div>
  </div>
 <div class="panel panel-default">
 <table class="table  table-hover table-bordered table-condensed">
  <tr class="success">
- <th >Tranportation</th>
- <th>COST</th>
- <th>NOTES</th>
+ <th >Transportation</th>
+ <th>Cost</th>
+ <th>Notes</th>
  </tr>
  <tr>
  <tr>
@@ -66,13 +67,13 @@
  <td><%= @leg.tran_ferry_notes %></td>
  </tr>
   <tr class="info">
- <td>TOTAL:</td>
+ <td>TOTAL</td>
  <td><span>$<%=raw @leg.tran_total %></span></td>
  <td></td>
  </tr>
  
   <tr class="warning">
- <td>Tips:</td>
+ <td>Tips</td>
  <td><%= @leg.tran_extra_notes %></td>
  <td></td>
  </tr>
@@ -83,8 +84,8 @@
  </tr>
  <tr class="success">
  <th >Food</th>
- <th>COST</th>
- <th>NOTES</th>
+ <th>Cost</th>
+ <th>Notes</th>
  </tr>
  <tr>
  <td>Breakfast<!-- <%= @leg.food_break %> --></td>
@@ -109,13 +110,13 @@
  <td><%= @leg.food_snacks_notes %></td>
  </tr>
  <tr class="info">
- <td>TOTAL:</td>
+ <td>TOTAL</td>
  <td><span>$<%=raw @leg.food_total %></span></td>
  <td></td>
  </tr>
 
   <tr class="warning">
- <td >Food Tips:</td>
+ <td >Food Tips</td>
  <td><%= @leg.food_extra_notes %></td>
  <td></td>
  </tr>
@@ -126,8 +127,8 @@
  </tr>
   <tr class="success">
  <th >Lodging</th>
- <th>COST</th>
- <th>NOTES</th>
+ <th>Cost</th>
+ <th>Notes</th>
  </tr>
   <tr>
  <td><%= @leg.lodging %></td>
@@ -136,8 +137,8 @@
  </tr>
  <tr class="success">
  <th >Sightseeing</th>
- <th>COST</th>
- <th>NOTES</th>
+ <th>Cost</th>
+ <th>Notes</th>
  </tr>
  <tr>
  <td><%= @leg.sight %></td>
@@ -145,9 +146,9 @@
  <td><%= @leg.sight_notes %></td>
  </tr>
  <tr class="success">
- <th >Souvenirs:</th>
- <th>COST</th>
- <th>NOTES</th>
+ <th >Souvenirs</th>
+ <th>Cost</th>
+ <th>Notes</th>
  </tr>
  <tr>
  <td><%= @leg.souvenirs %></td>
@@ -155,9 +156,9 @@
  <td><%= @leg.souvenirs_notes %></td>
  </tr>
 <tr class="success">
- <th >Bathroom:</th>
- <th>COST</th>
- <th>NOTES</th>
+ <th >Bathroom</th>
+ <th>Cost</th>
+ <th>Notes</th>
  </tr>
  <tr>
  <td><%= @leg.bathroom %></td>
@@ -165,9 +166,9 @@
  <td><%= @leg.bathroom_notes %></td>
  </tr>
  <tr class="success">
- <th >Bank Fees:</th>
- <th>COST</th>
- <th>NOTES</th>
+ <th >Bank Fees</th>
+ <th>Cost</th>
+ <th>Notes</th>
  </tr>
  <tr>
  <td><%= @leg.bank %></td>
@@ -175,9 +176,9 @@
  <td><%= @leg.bank_notes %></td>
  </tr>
  <tr class="success">
- <th >Misc::</th>
- <th>COST</th>
- <th>NOTES</th>
+ <th >Misc</th>
+ <th>Cost</th>
+ <th>Notes</th>
  </tr>
  <tr>
  <td><%= @leg.misc %></td>
