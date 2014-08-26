@@ -98,10 +98,10 @@ div #featureListPanel{display: none !important;}
 .instafeed2 .likes {width: 220px !important; height: auto;}
 .instafeed2 {display: inline-block; vertical-align: text-top; width: 229px !important;}
 .instafeed2 a {width: 229px !important; height: auto;display:inline-block;margin: 2px;text-decoration: none;color: #a0d468;}
-.bud_con{font-size:20px;color:#fff;text-shadow:1px 1px 1px #333, 0px 0px 10px #8CC152;position:relative;  text-align: center;}
-.bud_now{font-size:20px;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
-.blog_signup{font-size:20px;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
-.trackus{font-size:20px;}
+.bud_con{font-size:20px !important;color:#fff;text-shadow:1px 1px 1px #333, 0px 0px 10px #8CC152;position:relative;  text-align: center !important;}
+.bud_now{font-size:20px !important;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center !important;}
+.blog_signup{font-size:20px !important;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center !important;}
+.trackus{font-size:20px !important;}
 
 }
 @media only screen 
@@ -110,9 +110,9 @@ and (max-width : 767px){
 .instagr{position: relative;right: 0px;}
 .b0t70b-haAclf{display: none;}
 #featureListPanel{display: none;}
-.bud_con{font-size:30px;color:#fff;text-shadow:1px 1px 1px #333, 0px 0px 10px #8CC152;position:relative;  text-align: center;}
-.bud_now{font-size:30px;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
-.blog_signup{font-size:30px;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
+.bud_con{font-size:30px;color:#fff;text-shadow:1px 1px 1px #333, 0px 0px 10px #8CC152;position:relative;  text-align: center !important;}
+.bud_now{font-size:30px;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center !important;}
+.blog_signup{font-size:30px;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center !important;}
 .trackus{font-size:30px;}
 }
 @media only screen 
