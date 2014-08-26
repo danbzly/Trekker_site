@@ -32,7 +32,15 @@ h1 {text-align:center}
  .google-maps {position: relative;height: 0;overflow: hidden;}
  .google-maps iframe {position: absolute;top: 0;left: 0;width: 100% !important;}
  .emailform{width: 100%;height: 45px;border: 2px solid;border-radius: 5px;}
-
+#mc_embed_signup input.email {display: block;padding: 8px 0;margin: 0 4% 10px 0;text-indent: 5px;width: 58%;height: 43px;border-radius: 5px;border: 2px solid #333;}
+#mc_embed_signup form {display: block;position: relative;text-align: left;padding: 10px 0 0px 0 !important;}
+#mc_embed_signup{margin-top: 12px;}
+.bud_con{color:#fff;text-shadow:1px 1px 1px #333, 0px 0px 10px #8CC152;position:relative;  text-align: center;}
+.bud_now{color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152; text-align:right !important;}
+.trackbtn{margin-top: 20px;margin-bottom: 10px;}
+.emailbtn{width: 40% !important;position: relative;top: -52px;left: 60%;}
+.blog_signup{color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:right;}
+.btn_fx{width: 40%;height: 41px;}
 /* blog txt area adjustment */
 .bdy{height: 400px !important;}
 
@@ -79,7 +87,7 @@ h4.instafoot span{padding-right:2px;}
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 480px) {
-.conht {height:470px !important;}
+.conht {height:400px !important;}
 .conht-inter{display: none;}
 .conht-inter-mobile{display: block;}
 iframe #featureListPanel{display: none !important;}
@@ -90,8 +98,10 @@ div #featureListPanel{display: none !important;}
 .instafeed2 .likes {width: 220px !important; height: auto;}
 .instafeed2 {display: inline-block; vertical-align: text-top; width: 229px !important;}
 .instafeed2 a {width: 229px !important; height: auto;display:inline-block;margin: 2px;text-decoration: none;color: #a0d468;}
-
-
+.bud_con{font-size:20px;color:#fff;text-shadow:1px 1px 1px #333, 0px 0px 10px #8CC152;position:relative;  text-align: center;}
+.bud_now{font-size:20px;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
+.blog_signup{font-size:20px;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
+.trackus{font-size:20px;}
 
 }
 @media only screen 
@@ -100,14 +110,24 @@ and (max-width : 767px){
 .instagr{position: relative;right: 0px;}
 .b0t70b-haAclf{display: none;}
 #featureListPanel{display: none;}
+.bud_con{font-size:30px;color:#fff;text-shadow:1px 1px 1px #333, 0px 0px 10px #8CC152;position:relative;  text-align: center;}
+.bud_now{font-size:30px;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
+.blog_signup{font-size:30px;color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
+.trackus{font-size:30px;}
 }
 @media only screen 
 and (min-width : 481px) 
 and (max-width : 991px){
-	.conht {height:315px !important;}
+	.conht {height:470px !important;}
+.bud_con{color:#fff;text-shadow:1px 1px 1px #333, 0px 0px 10px #8CC152;position:relative;  text-align: center;}
+.bud_now{color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
+.blog_signup{color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
 
-	
-	
+.emailbtn{width: 100% !important;position: relative;top: 0px;left: 0px;}
+#mc_embed_signup input.email {display: block;padding: 8px 0;margin: 0 4% 10px 0;text-indent: 5px;width: 100% !important;height: 43px;border-radius: 5px;border: 2px solid #333;}
+#mc_embed_signup form {display: block;position: relative;text-align: left;padding: 10px 0 0px 0 !important;}
+#mc_embed_signup{margin-top: 12px;}
+.btn_fx{width: 100%;height: 41px;}
 }
 
 @media only screen 
@@ -123,4 +143,5 @@ and (min-width : 992px)
 and (max-width : 1999px){
 .fntchg{font-size: 13px;}
 .fntchg2{font-size: 20px;}
+
 }
