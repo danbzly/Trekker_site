@@ -28,43 +28,43 @@
  <tr>
  <td>AIR<!-- <%= @leg.tran_air %> --></td>
  <td><span>$<%=raw @leg.tran_air_cost %></span></td>
- <td><%= @leg.tran_air_notes %></td>
+ <td><%=raw @leg.tran_air_notes %></td>
  </tr>
  <tr>
   <tr>
  <td>Train<!-- <%= @leg.tran_train %> --></td>
  <td><span>$<%=raw @leg.tran_train_cost %></span></td>
- <td><%= @leg.tran_train_notes %></td>
+ <td><%=raw @leg.tran_train_notes %></td>
  </tr>
  <tr>
    <tr>
  <td>Bus<!-- <%= @leg.tran_bus %> --></td>
  <td><span>$<%=raw @leg.tran_bus_cost %></span></td>
- <td><%= @leg.tran_bus_notes %></td>
+ <td><%=raw @leg.tran_bus_notes %></td>
  </tr>
  
  <tr>
  <td>Metro<!-- <%= @leg.tran_met %> --></td>
  <td><span>$<%=raw @leg.tran_met_cost %></span></td>
- <td><%= @leg.tran_met_notes %></td>
+ <td><%=raw @leg.tran_met_notes %></td>
  </tr>
 
  <tr>
  <td>Taxi<!-- <%= @leg.tran_taxi %> --></td>
  <td><span>$<%=raw @leg.tran_taxi_cost %></span></td>
- <td><%= @leg.tran_taxi_notes %></td>
+ <td><%=raw @leg.tran_taxi_notes %></td>
  </tr>
  
   <tr>
  <td>Car Rental<!-- <%= @leg.tran_car %> --></td>
  <td><span>$<%=raw @leg.tran_car_cost %></span></td>
- <td><%= @leg.tran_car_notes %></td>
+ <td><%=raw @leg.tran_car_notes %></td>
  </tr>
  
   <tr>
  <td>Ferry<!-- <%= @leg.tran_ferry %> --></td>
  <td><span>$<%=raw @leg.tran_ferry_cost %></span></td>
- <td><%= @leg.tran_ferry_notes %></td>
+ <td><%=raw @leg.tran_ferry_notes %></td>
  </tr>
   <tr class="info">
  <td>TOTAL</td>
@@ -74,7 +74,7 @@
  
   <tr class="warning">
  <td>Tips</td>
- <td><%= @leg.tran_extra_notes %></td>
+ <td><%=raw @leg.tran_extra_notes %></td>
  <td></td>
  </tr>
  <tr>
@@ -90,24 +90,24 @@
  <tr>
  <td>Breakfast<!-- <%= @leg.food_break %> --></td>
  <td><span>$<%=raw @leg.food_break_cost %></span></td>
- <td><%= @leg.food_break_notes %></td>
+ <td><%=raw @leg.food_break_notes %></td>
  </tr>
  <tr>
  <td>Lunch<!-- <%= @leg.food_lunch %> --></td>
  <td><span>$<%=raw @leg.food_lunch_cost %></span></td>
- <td><%= @leg.food_lunch_notes %></td>
+ <td><%=raw @leg.food_lunch_notes %></td>
  </tr>
  
  <tr>
  <td>Dinner <!-- <%= @leg.food_dinner %> --></td>
  <td><span>$<%=raw @leg.food_dinner_cost %></span></td>
- <td><%= @leg.food_dinner_notes %></td>
+ <td><%=raw @leg.food_dinner_notes %></td>
  </tr>
  
  <tr>
  <td>Snacks<!-- <%= @leg.food_snacks %> --></td>
  <td><span>$<%=raw @leg.food_snacks_cost %></span></td>
- <td><%= @leg.food_snacks_notes %></td>
+ <td><%=raw @leg.food_snacks_notes %></td>
  </tr>
  <tr class="info">
  <td>TOTAL</td>
@@ -117,7 +117,7 @@
 
   <tr class="warning">
  <td >Food Tips</td>
- <td><%= @leg.food_extra_notes %></td>
+ <td><%=raw @leg.food_extra_notes %></td>
  <td></td>
  </tr>
   <tr>
@@ -131,9 +131,9 @@
  <th>Notes</th>
  </tr>
   <tr>
- <td><%= @leg.lodging %></td>
+ <td><%=raw @leg.lodging %></td>
  <td><span>$<%=raw @leg.lodging_cost %></span></td>
- <td><%= @leg.lodging_notes %></td>
+ <td><%=raw @leg.lodging_notes %></td>
  </tr>
  <tr class="success">
  <th >Sightseeing</th>
@@ -141,9 +141,9 @@
  <th>Notes</th>
  </tr>
  <tr>
- <td><%= @leg.sight %></td>
+ <td><%=raw @leg.sight %></td>
  <td><span>$<%=raw @leg.sight_cost %></span></td>
- <td><%= @leg.sight_notes %></td>
+ <td><%=raw @leg.sight_notes %></td>
  </tr>
  <tr class="success">
  <th >Souvenirs</th>
@@ -151,9 +151,9 @@
  <th>Notes</th>
  </tr>
  <tr>
- <td><%= @leg.souvenirs %></td>
+ <td><%=raw @leg.souvenirs %></td>
  <td><span>$<%=raw @leg.souvenirs_cost %></span></td>
- <td><%= @leg.souvenirs_notes %></td>
+ <td><%=raw @leg.souvenirs_notes %></td>
  </tr>
 <tr class="success">
  <th >Bathroom</th>
@@ -161,9 +161,9 @@
  <th>Notes</th>
  </tr>
  <tr>
- <td><%= @leg.bathroom %></td>
+ <td><%=raw @leg.bathroom %></td>
  <td><span>$<%=raw @leg.bathroom_cost %></span></td>
- <td><%= @leg.bathroom_notes %></td>
+ <td><%=raw @leg.bathroom_notes %></td>
  </tr>
  <tr class="success">
  <th >Bank Fees</th>
@@ -171,9 +171,9 @@
  <th>Notes</th>
  </tr>
  <tr>
- <td><%= @leg.bank %></td>
+ <td><%=raw @leg.bank %></td>
  <td><span>$<%=raw @leg.bank_cost %></span></td>
- <td><%= @leg.bank_notes %></td>
+ <td><%=raw @leg.bank_notes %></td>
  </tr>
  <tr class="success">
  <th>Misc</th>
@@ -181,7 +181,7 @@
  <th>Notes</th>
  </tr>
  <tr>
- <td><%= @leg.misc %></td>
+ <td><%=raw @leg.misc %></td>
  <td><span>$<%=raw @leg.misc_cost %></span></td>
  <td><%=raw @leg.misc_notes %></td>
  </tr>
