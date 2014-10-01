@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140823093929) do
+ActiveRecord::Schema.define(version: 20140924151214) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -150,6 +150,8 @@ ActiveRecord::Schema.define(version: 20140823093929) do
     t.string   "misc_cost"
     t.text     "misc_notes"
     t.string   "avcost"
+    t.string   "groceries"
+    t.string   "grocery_notes"
   end
 
   add_index "legs", ["user_id"], name: "index_legs_on_user_id"

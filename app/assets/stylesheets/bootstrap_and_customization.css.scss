@@ -43,16 +43,8 @@ h1 {text-align:center}
 .btn_fx{width: 40%;height: 41px;}
 /* blog txt area adjustment */
 .bdy{height: 400px !important;}
-
 .bckbtn{height:30px; position: relative; top:3px; left: 5px;}
-div.upload input {
-    display: block !important;
-width: 200px !important;
-height: 57px !important;
-opacity: 0 !important;
-overflow: hidden !important;
-
-}
+div.upload input {display: block !important;width: 200px !important;height: 57px !important;opacity: 0 !important;overflow: hidden !important;}
 
 /* .crser{cursor: none;} */
 
@@ -60,25 +52,20 @@ overflow: hidden !important;
 .insta {position: relative;}
 .insta img{width: 70px; height: auto;border-radius: 5px; margin: 2px 2px; }
 .insta img:hover{width: 70px; height: auto;border-radius: 5px;color: #8CC152; opacity: .8;}
-
 .insta-pg {position: relative;}
 .insta-pg img{width: 150px; height: auto;border-radius: 5px; margin: 2px 2px; }
 .insta-pg img:hover{width: 150px; height: auto;border-radius: 5px;color: #8CC152; opacity: .8;}
 .instafeed2 {display: inline-block; vertical-align: text-top;}
 .instafeed2 a {width: 150px !important; height: auto;display:inline-block;margin: 2px;text-decoration: none;color: #a0d468;}
-
 .instafeed2 .likes {width: 150px !important; height: auto;}
 .instafeed2 .instaloca{font-size: 10px; /* position: absolute; */font-size: 8px;/* position: absolute;top: 48px;left: 7px; */color: #333;overflow: hidden;}
-
 .instafeed2 a:hover .likes {opacity:1;text-decoration: none;color: #8CC152;}
 .instagr{position: relative;right: -26px;}
 
 /* .hearts{color:#E9573F;} */
 #instafeed a {width: 70px; height: auto;display:inline-block;margin: 2px;text-decoration: none;color: #a0d468;}
-
 #instafeed .likes {width: 70px; height: auto;}
 #instafeed .instaloca{font-size: 10px; /* position: absolute; */font-size: 8px;/* position: absolute;top: 48px;left: 7px; */color: #333;overflow: hidden;}
-
 #instafeed a:hover .likes {opacity:1;text-decoration: none;color: #8CC152;}
 h4.instafoot{margin: 0; padding-right:4px;}
 h4.instafoot span{padding-right:2px;}
@@ -119,29 +106,29 @@ and (max-width : 767px){
 and (min-width : 481px) 
 and (max-width : 991px){
 	.conht {height:470px !important;}
-.bud_con{color:#fff;text-shadow:1px 1px 1px #333, 0px 0px 10px #8CC152;position:relative;  text-align: center;}
-.bud_now{color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
-.blog_signup{color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
-
-.emailbtn{width: 100% !important;position: relative;top: 0px;left: 0px;}
-#mc_embed_signup input.email {display: block;padding: 8px 0;margin: 0 4% 10px 0;text-indent: 5px;width: 100% !important;height: 43px;border-radius: 5px;border: 2px solid #333;}
-#mc_embed_signup form {display: block;position: relative;text-align: left;padding: 10px 0 0px 0 !important;}
-#mc_embed_signup{margin-top: 12px;}
-.btn_fx{width: 100%;height: 41px;}
+	.bud_con{color:#fff;text-shadow:1px 1px 1px #333, 0px 0px 10px #8CC152;position:relative;  text-align: center;}
+	.bud_now{color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
+	.blog_signup{color:#fff;position:relative; text-shadow: 1px 1px 1px #333, 0px 0px 10px #8CC152;text-align:center;}
+	.emailbtn{width: 100% !important;position: relative;top: 0px;left: 0px;}
+	#mc_embed_signup input.email {display: block;padding: 8px 0;margin: 0 4% 10px 0;text-indent: 5px;width: 100% !important;height: 43px;border-radius: 5px;border: 2px solid #333;}
+	#mc_embed_signup form {display: block;position: relative;text-align: left;padding: 10px 0 0px 0 !important;}
+	#mc_embed_signup{margin-top: 12px;}
+	.btn_fx{width: 100% !important;height: 41px;}
 }
 
 @media only screen 
 and (min-width : 992px) 
 and (max-width : 1024px){
 	
-#blogs {width: 83%!important;}
+	#blogs {width: 83%!important;}
 
 	
 }
 @media only screen 
 and (min-width : 992px) 
 and (max-width : 1999px){
-.fntchg{font-size: 13px;}
-.fntchg2{font-size: 20px;}
+
+	.fntchg{font-size: 13px;}
+	.fntchg2{font-size: 20px;}
 
 }
