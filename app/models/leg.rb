@@ -6,6 +6,6 @@ belongs_to :user
   
  def to_param
     "#{id}-#{leg_header}"
-  end
+  end 
   
 end
